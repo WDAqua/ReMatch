@@ -5,6 +5,7 @@ from reader import PattyReader
 from embedder import Embedder
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
+from scipy import spatial
 
 # ===== definitions =====
 def processPattyData(pattyPath='dbpedia-relation-paraphrases_json.txt',glovePath='../glove.6B.50d.txt' ):
@@ -22,7 +23,7 @@ def processPattyData(pattyPath='dbpedia-relation-paraphrases_json.txt',glovePath
             mat.append(v)
         key = key +1
     #mat = np.asarray(mat)
-    return mat, glove
+    return mat, glove, patty
 
 def pad(A, length):
     arr = np.zeros(length)
@@ -30,19 +31,32 @@ def pad(A, length):
     return arr
 
 def padVectors(mat, length=None):
-    maxLength = max(len(vector) for vector in mat) if length is None else maxLength = length
-    maxLength = maxLength - 1
+    if length is None:
+        maxLength = max(len(vector) for vector in mat)
+        maxLength = maxLength - 1
+    else:
+        maxLength = length
     newMat = []
     for vector in mat:
         v = pad(vector[:-1],maxLength)
-        newMat.append(np.append(v,vector[-1]))
+        if length is None:
+            v = np.append(v,vector[-1])
+        newMat.append(v)
     return newMat, maxLength
 
-def calculateSimilarity(mat,vects):
-    return cosine_similarity(mat,vects)
+def calculateSimilarity(vects,mat):
+    '''
+    result = []
+    for vec in vects:
+        similarities = []
+        for pattern in mat:
+            similarities.append(1-spatial.distance.cosine(vec,pattern))
+        result.append(np.array(similarities))
+    return result'''
+    return cosine_similarity(vects,mat)
 
 # ===== main testing =====          
 if __name__ == "__main__":
-    mat, _ = processPattyData()
+    mat, _, _ = processPattyData()
     mat, maxLength = padVectors(mat)
     #calculateSimilarity(mat,padVectors())

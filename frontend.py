@@ -7,13 +7,13 @@ from embedder import Embedder
 from pprint import pprint as pp
 
 # ===== definitions =====
-def processQuestion(gloveModel, question):
+def processQuestion(gloveModel, question, minLen=1,maxLen=3):
     tagger = POSTagger()
     pos = tagger.parse(question)
     # create splitter and generalizer
     splitter = Splitter()
     gen_question = splitter.generalize(question, pos)
-    parts = splitter.split(gen_question)
+    parts = list(splitter.split(gen_question,min=minLen,max=maxLen))
     # create embedder part
     vectors = []
     for part in parts:
@@ -22,4 +22,4 @@ def processQuestion(gloveModel, question):
 
 # ===== main testing =====          
 if __name__ == "__main__":
-    pp(processQuestion(Embedder(),'Who is the wife of Barack Obama'))
+    pp(processQuestion(Embedder('../glove.6B.50d.txt'),'Who is the wife of Barack Obama'))
