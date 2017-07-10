@@ -7,7 +7,7 @@ from embedder import Embedder
 from pprint import pprint as pp
 
 # ===== definitions =====
-def processQuestion(gloveModel, question, minLen=1,maxLen=3):
+def processQuestion(gloveModel, question, minLen=1,maxLen=3, vectorMethod='concat'):
     tagger = POSTagger()
     pos = tagger.parse(question)
     # create splitter and generalizer
@@ -17,7 +17,7 @@ def processQuestion(gloveModel, question, minLen=1,maxLen=3):
     # create embedder part
     vectors = []
     for part in parts:
-        vectors.append(gloveModel.getVector(part))
+        vectors.append(gloveModel.getVector(part,method=vectorMethod))
     return vectors,parts,pos,gen_question
 
 # ===== main testing =====          

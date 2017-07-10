@@ -17,9 +17,10 @@ class Embedder:
         print('Done loading GloVe model')
         
     # methods
-    def getVector(self,word, method='concat'):
+    def getVector(self, word, method='sum'):
         if len(word.split()) == 1:
             if not self.gloveModel.dictionary.has_key(word.lower()):
+                print(word,'not found')
                 return None# doesn't exists
             index = self.gloveModel.dictionary[word.lower()]
             return self.gloveModel.word_vectors[index]
@@ -35,10 +36,14 @@ class Embedder:
                     bigVector = v
             return bigVector
         else : # do summation
-            result = np.asarray([])
+            result = np.array([])
             for w in word.split():
                 v = self.getVector(w,method)
-                result = result+v
+                if v is None:
+                    continue
+                if len(result) == 0:
+                    result = np.zeros(len(v)) 
+                result = np.add(result,v)/2
             return result
     
 # ===== main testing =====          
