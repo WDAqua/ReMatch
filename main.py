@@ -5,8 +5,16 @@ import frontend
 import backend
 import numpy as np
 
+# ======= consts =============
 
+''' number of winner relations for each part of the question '''
+NUM_WINNERS = 2
 
+''' minimum length of combinatorials of the question'''
+MIN_LENGTH_COMP = 1
+
+''' maximum length of combinatorials of the question'''
+MAX_LENGTH_COMP = 4
 
 # ===== definitions =====
 
@@ -26,10 +34,10 @@ def processPatty(vectorMethod):
     return mat, maxLength, glove, patty
 
 def processQuestion(glove, maxLength, patty, mat, vectorMethod):
-    vectors, parts, pos, gen_question = frontend.processQuestion(glove,readQuestion(),minLen=1,maxLen=4, vectorMethod=vectorMethod)
+    vectors, parts, pos, gen_question = frontend.processQuestion(glove,readQuestion(),minLen=MIN_LENGTH_COMP,maxLen=MAX_LENGTH_COMP, vectorMethod=vectorMethod)
     vectors, _ = backend.padVectors(vectors,maxLength)
     similarities = backend.calculateSimilarity(np.array(vectors),np.array(mat)[:,:-1])
-    winnersNum = 2
+    winnersNum = NUM_WINNERS
     finalCount = {}
     for sim in similarities:
         #index = max(xrange(len(sim)), key = lambda x: sim[x])
