@@ -1,0 +1,634 @@
+
+===========================
+WHO IS THE TALLEST BASKETBALL PLAYER?
+formerTeam,college,influencedBy,associatedBand,team,debutTeam,associatedMusicalArtist,successor,birthPlace,militaryUnit
+===========================
+WHO IS THE COACH OF ANKARA'S ICE HOCKEY TEAM?
+managerClub,formerTeam,team,associatedBand,occupation,draftTeam,college,influencedBy,debutTeam,league
+===========================
+WHAT IS THE CAPITAL OF CANADA?
+birthPlace,associatedBand,influencedBy,deathPlace,country,largestCity,isPartOf,state,spouse,associatedMusicalArtist
+===========================
+WHO PLAYED GUS FRING IN BREAKING BAD?
+formerTeam,team,league,primeMinister,associatedBand,spouse,prospectTeam,portrayer,instrument,residence
+===========================
+WHICH CITIES DOES THE WESER FLOW THROUGH?
+country,sourceCountry,successor,associatedMusicalArtist,city,associatedBand,state,influencedBy,spouse,team
+===========================
+IS FRANK HERBERT STILL ALIVE?
+spouse,influenced,associatedMusicalArtist,associatedBand,relative,president,successor,sisterStation,partner,starring
+===========================
+IN WHICH COUNTRY DOES THE NILE START?
+associatedMusicalArtist,influencedBy,associatedBand,spouse,child,successor,country,birthPlace,artist,producer
+===========================
+WHICH AWARDS DID DOUGLAS HOFSTADTER WIN?
+occupation,president,almaMater,team,appointer,award,influencedBy,associatedBand,associatedMusicalArtist,monarch
+===========================
+IS RITA WILSON THE WIFE OF TOM HANKS?
+parent,spouse,associatedBand,influenced,successor,associatedMusicalArtist,child,predecessor,president,influencedBy
+===========================
+WHICH TELEVISION SHOWS WERE CREATED BY WALT DISNEY?
+creator,associatedMusicalArtist,associatedBand,network,knownFor,channel,location,occupation,country,series
+===========================
+WHAT WAS THE FIRST QUEEN ALBUM?
+president,successor,associatedBand,associatedMusicalArtist,team,influencedBy,formerTeam,militaryUnit,battle,education
+===========================
+WHAT IS THE LARGEST CITY IN AUSTRALIA?
+birthPlace,associatedBand,state,influencedBy,isPartOf,country,associatedMusicalArtist,spouse,successor,militaryUnit
+===========================
+SHOW ME THE BOOK THAT MUHAMMAD ALI WROTE.
+influenced,knownFor,notableWork,influencedBy,predecessor,spouse,successor,associatedBand,associatedMusicalArtist,artist
+===========================
+WHO WAS THE 16TH PRESIDENT OF THE UNITED STATES?
+country,successor,birthPlace,associatedBand,associatedMusicalArtist,nationality,deathPlace,education,knownFor,almaMater
+===========================
+HOW MANY CHILDREN DID BENJAMIN FRANKLIN HAVE?
+child,successor,associatedMusicalArtist,associatedBand,influencedBy,president,spouse,parent
+===========================
+WHICH SUBSIDIARY OF LUFTHANSA SERVES BOTH DORTMUND AND BERLIN TEGEL?
+type,owner,owningCompany,parentCompany,birthPlace,location,almaMater,broadcastArea,religion,employer
+===========================
+WHAT IS THE AREA CODE OF BERLIN?
+board,influencedBy,associatedBand,successor,associatedMusicalArtist,spouse,isPartOf,country,routeJunction,relation
+===========================
+HOW MUCH DID THE LEGO MOVIE COST?
+influencedBy,associatedMusicalArtist,president,successor,associatedBand,child,spouse,almaMater,formerTeam
+===========================
+IN WHICH CITY DOES SYLVESTER STALLONE LIVE?
+country,state,isPartOf,associatedBand,associatedMusicalArtist,influencedBy,successor,birthPlace,child,president
+===========================
+GIVE ME ALL MOVIES DIRECTED BY FRANCIS FORD COPPOLA.
+award,director,successor,musicComposer,editing,writer,starring,producer,spouse,notableWork
+===========================
+IN WHICH MILITARY CONFLICTS DID LAWRENCE OF ARABIA PARTICIPATE?
+associatedBand,associatedMusicalArtist,successor,influencedBy,team,president,spouse,formerTeam,isPartOfMilitaryConflict,partner
+===========================
+ARE TREE FROGS A TYPE OF AMPHIBIAN?
+family,associatedBand,associatedMusicalArtist,instrument,routeEnd,influencedBy,formerTeam,routeStart,team,mouthMountain
+===========================
+WHO IS THE DAUGHTER OF ROBERT KENNEDY MARRIED TO?
+child,spouse,associatedBand,successor,associatedMusicalArtist,parent,influenced,influencedBy,relative,relation
+===========================
+TO WHICH PARTY DOES THE MAYOR OF PARIS BELONG?
+birthPlace,successor,residence,deathPlace,associatedBand,influencedBy,associatedMusicalArtist,spouse,party,splitFromParty
+===========================
+WHAT DID BRUCE CARVER DIE FROM?
+spouse,associatedMusicalArtist,battle,deathPlace,associatedBand,birthPlace,influencedBy,nationality,successor,president
+===========================
+WHICH INDIAN COMPANY HAS THE MOST EMPLOYEES?
+associatedBand,associatedMusicalArtist,subsidiary,parentCompany,influencedBy,successor,owningCompany,spouse,formerTeam,battle
+===========================
+WHICH CITY HAS THE LEAST INHABITANTS?
+country,influencedBy,associatedBand,associatedMusicalArtist,state,battle,formerTeam,successor,birthPlace,district
+===========================
+WHEN WAS THE BATTLE OF GETTYSBURG?
+isPartOfMilitaryConflict,battle,formerTeam,nationality,associatedBand,team,place,debutTeam,birthPlace,associatedMusicalArtist
+===========================
+WHICH MOVIES DID KUROSAWA DIRECT?
+award,president,influencedBy,successor,associatedBand,associatedMusicalArtist,notableWork,knownFor,deathPlace,birthPlace
+===========================
+IN WHICH CITY DID JOHN F. KENNEDY DIE?
+country,state,isPartOf,successor,president,influencedBy,birthPlace,associatedBand,associatedMusicalArtist,formerTeam
+===========================
+GIVE ME THE CURRENCY OF CHINA.
+successor,location,nationality,team,primeMinister,influencedBy,formerTeam,subsidiary,spouse,deathPlace
+===========================
+WHICH AIRPORTS DOES YETI AIRLINES SERVE?
+headquarter,deathPlace,birthPlace,hubAirport,successor,city,monarch,predecessor,primeMinister,president
+===========================
+WHO IS THE PRESIDENT OF ERITREA?
+knownFor,influencedBy,successor,associatedBand,employer,education,occupation,nationality,deathPlace,birthPlace
+===========================
+IN WHAT CITY IS THE HEINEKEN BREWERY?
+location,associatedBand,influencedBy,associatedMusicalArtist,spouse,country,district,city,state,birthPlace
+===========================
+IN WHICH ANCIENT EMPIRE COULD YOU PAY WITH COCOA BEANS?
+successor,associatedBand,associatedMusicalArtist,team,country,birthPlace,deathPlace,locationCountry,spouse,primeMinister
+===========================
+WHO IS THE EDITOR OF FORBES?
+employer,knownFor,influencedBy,spouse,associatedBand,author,successor,associatedMusicalArtist,editor,currentPartner
+===========================
+WHICH RIVER DOES THE BROOKLYN BRIDGE CROSS?
+riverMouth,associatedMusicalArtist,influencedBy,associatedBand,origin,source,city,state,president,spouse
+===========================
+WHEN DID PRINCESS DIANA DIE?
+spouse,associatedBand,associatedMusicalArtist,relative,relation,child,parent,influencedBy,successor,president
+===========================
+WHO WAS THE POPE THAT FOUNDED THE VATICAN TELEVISION?
+associatedBand,associatedMusicalArtist,primeMinister,knownFor,deathPlace,occupation,nationality,spouse,party,birthPlace
+===========================
+GIVE ME THE GRANDCHILDREN OF ELVIS PRESLEY.
+child,spouse,successor,parent,predecessor,associatedBand,influencedBy,nationality,associatedMusicalArtist,relative
+===========================
+WHO IS THE MAYOR OF THE CAPITAL OF FRENCH POLYNESIA?
+birthPlace,deathPlace,residence,country,associatedBand,influencedBy,isPartOf,state,associatedMusicalArtist,largestCity
+===========================
+WHEN DID THE MING DYNASTY DISSOLVE?
+successor,parent,predecessor,associatedBand,associatedMusicalArtist,president,influencedBy,birthPlace,battle,primeMinister
+===========================
+DOES NEYMAR PLAY FOR REAL MADRID?
+associatedBand,associatedMusicalArtist,formerTeam,team,instrument,successor,president,knownFor,draftTeam,college
+===========================
+IS LAKE BAIKAL BIGGER THAN THE GREAT BEAR LAKE?
+team,influencedBy,associatedBand,associatedMusicalArtist,militaryUnit,relative,successor,formerTeam,battle,president
+===========================
+FROM WHICH REGION IS THE MELON DE BOURGOGNE?
+birthPlace,hometown,location,country,influencedBy,associatedBand,associatedMusicalArtist,spouse,sourceRegion,city
+===========================
+WHAT IS THE OFFICIAL LANGUAGE OF SURINAME?
+influencedBy,associatedBand,associatedMusicalArtist,spouse,militaryUnit,successor,primeMinister,formerTeam,language,opponent
+===========================
+WHAT IS THE BIGGEST STADIUM IN SPAIN?
+location,owner,associatedBand,influencedBy,tenant,associatedMusicalArtist,spouse,successor,militaryUnit,battle
+===========================
+GIVE ME ALL ACTORS STARRING IN LAST ACTION HERO.
+award,battle,successor,starring,associatedBand,team,birthPlace,associatedMusicalArtist,parent,primeMinister
+===========================
+DOES THE NEW BATTLESTAR GALACTICA SERIES HAVE MORE EPISODES THAN THE OLD ONE?
+series,associatedBand,associatedMusicalArtist,team,relative,spouse,birthPlace,militaryUnit,influencedBy,successor
+===========================
+WHO IS THE MAYOR OF TEL AVIV?
+birthPlace,residence,deathPlace,influencedBy,associatedBand,spouse,successor,associatedMusicalArtist,knownFor,currentPartner
+===========================
+IS PROINSULIN A PROTEIN?
+previousWork,associatedBand,militaryBranch,country,associatedMusicalArtist,sisterStation,influencedBy,spouse,commandStructure,regionServed
+===========================
+WHAT IS THE LARGEST COUNTRY IN THE WORLD?
+associatedBand,associatedMusicalArtist,influencedBy,successor,birthPlace,spouse,formerTeam,primeMinister,country,team
+===========================
+GIVE ME ALL PROFESSIONAL SKATEBOARDERS FROM SWEDEN.
+associatedBand,associatedMusicalArtist,influencedBy,successor,team,country,birthPlace,nationality,formerTeam,militaryUnit
+===========================
+WAS NATALIE PORTMAN BORN IN THE UNITED STATES?
+country,location,battle,primeMinister,successor,birthPlace,province,locatedInArea,isPartOf,foundationPlace
+===========================
+DID TESLA WIN A NOBEL PRIZE IN PHYSICS?
+award,team,birthPlace,battle,occupation,debutTeam,citizenship,militaryBranch,nationality,country
+===========================
+WHO DEVELOPED THE VIDEO GAME WORLD OF WARCRAFT?
+formerTeam,associatedMusicalArtist,team,associatedBand,computingPlatform,spouse,influencedBy,developer,publisher,nationality
+===========================
+WHO WAS CALLED RODZILLA?
+influencedBy,successor,associatedMusicalArtist,associatedBand,spouse,relative,relation,child,parent,predecessor
+===========================
+WHO COMPOSED THE MUSIC FOR HAROLD AND MAUDE?
+associatedMusicalArtist,associatedBand,child,artist,writer,spouse,team,bandMember,formerCoach,musicalBand
+===========================
+WHEN DID BORIS BECKER END HIS ACTIVE CAREER?
+team,birthPlace,formerTeam,managerClub,almaMater,associatedBand,associatedMusicalArtist,militaryUnit,debutTeam,country
+===========================
+WHAT IS BATMAN'S REAL NAME?
+associatedBand,associatedMusicalArtist,influencedBy,president,spouse,successor,child,primeMinister,relative,predecessor
+===========================
+WHO WERE THE PARENTS OF QUEEN VICTORIA?
+associatedBand,parent,associatedMusicalArtist,spouse,successor,child,relative,relation,location,influencedBy
+===========================
+DID KAURISMAKI EVER WIN THE GRAND PRIX AT CANNES?
+team,award,battle,birthPlace,formerTeam,trainer,successor,influencedBy,managerClub,country
+===========================
+WHO CREATED FAMILY GUY?
+creator,associatedMusicalArtist,associatedBand,knownFor
+===========================
+HOW MANY LANGUAGES ARE SPOKEN IN TURKMENISTAN?
+influencedBy,birthPlace,associatedMusicalArtist,knownFor,associatedBand,influenced,spouse,language,sisterStation,child
+===========================
+HOW MANY COMPANIES WERE FOUNDED BY THE FOUNDER OF FACEBOOK?
+associatedMusicalArtist,associatedBand,location,bandMember,foundedBy,occupation,knownFor,leader,keyPerson,locationCountry
+===========================
+WHICH COUNTRY DOES THE CREATOR OF MIFFY COME FROM?
+associatedBand,associatedMusicalArtist,portrayer,influencedBy,spouse,creator,child,producer,knownFor,team
+===========================
+IN WHICH UK CITY ARE THE HEADQUARTERS OF THE MI6?
+country,birthPlace,isPartOf,location,formerTeam,locationCity,foundationPlace,headquarter,associatedMusicalArtist,state
+===========================
+HOW MANY COMPANIES WERE FOUNDED IN THE SAME YEAR AS GOOGLE?
+team,birthPlace,formerTeam,location,influencedBy,successor,associatedMusicalArtist,locationCountry,subsidiary,almaMater
+===========================
+WHERE IN FRANCE IS SPARKLING WINE PRODUCED?
+associatedMusicalArtist,associatedBand,location,influencedBy,owningCompany,influenced,knownFor,nationality,spouse,birthPlace
+===========================
+DID CHE GUEVARA HAVE CHILDREN?
+child,successor,associatedMusicalArtist,associatedBand,parent,spouse,president,influencedBy
+===========================
+WHAT FORM OF GOVERNMENT DOES RUSSIA HAVE?
+primeMinister,associatedBand,associatedMusicalArtist,successor,spouse,child,influencedBy,parentCompany,president,country
+===========================
+IN WHICH COUNTRY IS THE LIMERICK LAKE?
+country,associatedBand,associatedMusicalArtist,location,birthPlace,artist,producer,hometown,influencedBy,nationality
+===========================
+WHO IS THE KING OF THE NETHERLANDS?
+predecessor,deathPlace,parent,associatedBand,influencedBy,birthPlace,associatedMusicalArtist,restingPlace,knownFor,successor
+===========================
+WHAT IS THE LOCATION OF THE HOUSES OF PARLIAMENT?
+location,associatedBand,district,country,influencedBy,associatedMusicalArtist,spouse,birthPlace,city,successor
+===========================
+WHAT IS THE TIME ZONE OF SALT LAKE CITY?
+associatedBand,birthPlace,spouse,associatedMusicalArtist,team,influencedBy,country,managerClub,formerTeam,district
+===========================
+IS CHRISTIAN BALE STARRING IN BATMAN BEGINS?
+award,routeStart,routeEnd,starring,narrator,cinematography,musicComposer,editing,author,director
+===========================
+WHO IS THE SON OF SONNY AND CHER?
+associatedBand,associatedMusicalArtist,spouse,successor,child,influencedBy,parent,predecessor,relative,partner
+===========================
+LIST ALL GAMES BY GMT.
+developer,publisher,team,draftTeam,formerTeam,debutTeam,country,league,managerClub,genre
+===========================
+IS BARACK OBAMA A DEMOCRAT?
+influencedBy,associatedBand,spouse,knownFor,associatedMusicalArtist,influenced,party,successor,occupation,formerTeam
+===========================
+WHAT COLOR EXPRESSES LOYALTY?
+influencedBy,voice,portrayer,starring,musicalArtist,primeMinister,president,deathPlace,musicalBand,militaryUnit
+===========================
+IN WHICH CITY DID NIKOS KAZANTZAKIS DIE?
+country,state,isPartOf,successor,president,influencedBy,birthPlace,associatedBand,associatedMusicalArtist,formerTeam
+===========================
+LIST ALL THE MUSICALS WITH MUSIC BY ELTON JOHN.
+associatedBand,associatedMusicalArtist,team,starring,musicBy,award,nationality,deathPlace,country,birthPlace
+===========================
+WHICH FILMS DID STANLEY KUBRICK DIRECT?
+award,president,influencedBy,successor,associatedBand,associatedMusicalArtist,notableWork,knownFor,deathPlace,birthPlace
+===========================
+HOW HIGH IS THE YOKOHAMA MARINE TOWER?
+associatedBand,influencedBy,spouse,associatedMusicalArtist,successor,instrument,relative,influenced,child,primeMinister
+===========================
+IS CHRISTIAN BALE STARRING IN VELVET GOLDMINE?
+award,starring,team,musicalArtist,artist,musicalBand,associatedBand,narrator,cinematography,musicComposer
+===========================
+WHICH COMPUTER SCIENTIST WON AN OSCAR?
+formerTeam,occupation,almaMater,birthPlace,team,party,president,draftTeam,nationality,deathPlace
+===========================
+WHO IS THE OLDEST CHILD OF MERYL STREEP?
+parent,spouse,relation,child,predecessor,influencedBy,associatedBand,associatedMusicalArtist,successor,militaryUnit
+===========================
+GIVE ME ALL LAUNCH PADS OPERATED BY NASA.
+owner,operatedBy,influencedBy,successor,instrument,associatedBand,associatedMusicalArtist,owningOrganisation,sisterStation,operator
+===========================
+HOW MANY ETHNIC GROUPS LIVE IN SLOVENIA?
+associatedMusicalArtist,birthPlace,associatedBand,influencedBy,deathPlace,country,hometown,nationality,successor,militaryUnit
+===========================
+IN WHICH YEAR WAS RACHEL STEVENS BORN?
+formerTeam,birthPlace,team,debutTeam,country,managerClub,residence,college,deathPlace,almaMater
+===========================
+WHO IS THE FORMULA 1 RACE DRIVER WITH THE MOST RACES?
+team,birthPlace,formerTeam,region,associatedBand,associatedMusicalArtist,influencedBy,managerClub,successor,draftTeam
+===========================
+WHICH TYPES OF GRAPES GROW IN OREGON?
+family,instrument,associatedBand,associatedMusicalArtist,birthPlace,location,hometown,deathPlace,formerTeam,locationCountry
+===========================
+GIVE ME A LIST OF ALL CRITICALLY ENDANGERED BIRDS.
+formerTeam,team,party,associatedBand,associatedMusicalArtist,successor,draftTeam,debutTeam,family,relation
+===========================
+HOW TALL IS MICHAEL JORDAN?
+successor,associatedMusicalArtist,associatedBand,influencedBy,spouse,operatingSystem,isPartOf,location,president,series
+===========================
+WHAT IS IN A CHOCOLATE CHIP COOKIE?
+spouse,influencedBy,location,associatedBand,battle,successor,associatedMusicalArtist,team,mountainRange,primeMinister
+===========================
+DOES ABRAHAM LINCOLN'S DEATH PLACE HAVE A WEBSITE?
+formerTeam,occupation,associatedBand,associatedMusicalArtist,team,child,influencedBy,product,instrument,relative
+===========================
+WHAT IS THE HIGHEST MOUNTAIN IN AUSTRALIA?
+locatedInArea,mountainRange,associatedBand,influencedBy,associatedMusicalArtist,country,spouse,successor,state,militaryUnit
+===========================
+WHAT IS THE TOTAL POPULATION OF MELBOURNE, FLORIDA?
+associatedBand,associatedMusicalArtist,influencedBy,birthPlace,spouse,successor,country,region,location,president
+===========================
+FOR WHICH LABEL DID ELVIS RECORD HIS FIRST ALBUM?
+recordLabel,associatedBand,president,influencedBy,associatedMusicalArtist,successor,artist,producer,formerCoach,doctoralAdvisor
+===========================
+HOW MANY ALDI STORES ARE THERE?
+location,regionServed,locationCountry,subsidiary,associatedMusicalArtist,owningCompany,owner,president,associatedBand,product
+===========================
+WHO WAS THE FATHER OF QUEEN ELIZABETH II?
+associatedBand,associatedMusicalArtist,successor,formerTeam,relation,influencedBy,team,president,spouse,influenced
+===========================
+WHO WAS THE WIFE OF U.S. PRESIDENT LINCOLN?
+parent,spouse,child,president,successor,associatedBand,associatedMusicalArtist,influenced,predecessor,formerTeam
+===========================
+WHICH BOOK HAS THE MOST PAGES?
+influencedBy,associatedMusicalArtist,influenced,knownFor,associatedBand,notableWork,spouse,successor,team,battle
+===========================
+WHICH PROFESSIONAL SURFERS WERE BORN IN AUSTRALIA?
+birthPlace,associatedBand,associatedMusicalArtist,spouse,relation,influencedBy,successor,deathPlace,parent,predecessor
+===========================
+GIVE ME ALL BOOKS BY WILLIAM GOLDMAN WITH MORE THAN 300 PAGES.
+influenced,author,knownFor,notableWork,successor,team,associatedBand,illustrator,president,associatedMusicalArtist
+===========================
+WHAT IS THE TIMEZONE IN SAN PEDRO DE ATACAMA?
+influencedBy,associatedBand,country,associatedMusicalArtist,spouse,nationality,birthPlace,successor,team,regionServed
+===========================
+WHO WAS THE DOCTORAL SUPERVISOR OF ALBERT EINSTEIN?
+almaMater,influencedBy,country,doctoralAdvisor,doctoralStudent,academicAdvisor,successor,formerTeam,associatedBand,associatedMusicalArtist
+===========================
+WHAT COUNTRY IS MOUNT EVEREST IN?
+associatedBand,associatedMusicalArtist,location,artist,producer,militaryBranch,president,country,mouthCountry,sourceCountry
+===========================
+WHICH COUNTRY WAS BILL GATES BORN IN?
+managerClub,successor,formerTeam,artist,producer,hometown,nationality,sourceCountry,locationCountry,monarch
+===========================
+HOW MANY LANGUAGES ARE SPOKEN IN COLOMBIA?
+influencedBy,birthPlace,associatedMusicalArtist,knownFor,associatedBand,influenced,spouse,language,sisterStation,child
+===========================
+WHO IS THE MAYOR OF PARIS?
+birthPlace,residence,deathPlace,influencedBy,associatedBand,spouse,successor,associatedMusicalArtist,knownFor,currentPartner
+===========================
+LIST ALL EPISODES OF THE FIRST SEASON OF THE HBO TELEVISION SERIES THE SOPRANOS.
+formerTeam,team,series,associatedBand,associatedMusicalArtist,college,influencedBy,birthPlace,debutTeam,managerClub
+===========================
+IS COLA A BEVERAGE?
+influencedBy,associatedBand,spouse,knownFor,associatedMusicalArtist,influenced,party,successor,occupation,formerTeam
+===========================
+WHAT ARE THE FIVE BOROUGHS OF NEW YORK?
+birthPlace,routeJunction,region,militaryBranch,president,team,country,routeStart,location,residence
+===========================
+LIST ALL EPISODES OF THE FIRST SEASON OF THE HBO TELEVISION SERIES THE SOPRANOS!
+formerTeam,team,series,associatedBand,associatedMusicalArtist,influencedBy,college,birthPlace,debutTeam,managerClub
+===========================
+HOW MANY PAGES DOES WAR AND PEACE HAVE?
+associatedMusicalArtist,associatedBand,influencedBy,deathPlace,birthPlace,country,influenced,spouse,isPartOfMilitaryConflict,party
+===========================
+LIST THE CHILDREN OF MARGARET THATCHER.
+child,associatedBand,parent,successor,spouse,associatedMusicalArtist,type,award,league,college
+===========================
+WHERE IS FORT KNOX LOCATED?
+location,stateOfOrigin,employer,recordLabel,occupation,college,deathPlace,birthPlace,team
+===========================
+WHO WAS VINCENT VAN GOGH INSPIRED BY?
+influencedBy,doctoralAdvisor,influenced,relative,relation,child,parent,predecessor,president,successor
+===========================
+SHOW ME HEMINGWAY'S AUTOBIOGRAPHY.
+notableWork,influenced,knownFor,spouse,associatedBand,associatedMusicalArtist,team,author,relative,trainer
+===========================
+WHOM DID LANCE BASS MARRY?
+president,influencedBy,successor,associatedMusicalArtist,associatedBand
+===========================
+WAS U.S. PRESIDENT JACKSON INVOLVED IN A WAR?
+battle,knownFor,influencedBy,associatedBand,associatedMusicalArtist,primeMinister,successor,team,party,formerTeam
+===========================
+DO PRINCE HARRY AND PRINCE WILLIAM HAVE THE SAME PARENTS?
+spouse,associatedMusicalArtist,associatedBand,team,child,parent,influencedBy,formerTeam,president,successor
+===========================
+WHO COMPOSED THE SOUNDTRACK FOR CAMERON'S TITANIC?
+associatedMusicalArtist,associatedBand,album,recordLabel,starring,occupation,team,notableWork,artist,award
+===========================
+WHO IS THE HOST OF THE BBC WILDLIFE SPECIALS?
+knownFor,occupation,associatedBand,associatedMusicalArtist,influencedBy,birthPlace,formerTeam,nationality,spouse,successor
+===========================
+IN WHICH CITY DOES THE CHILE ROUTE 68 END?
+team,country,associatedBand,influencedBy,birthPlace,formerTeam,associatedMusicalArtist,state,isPartOf,successor
+===========================
+HOW MANY INHABITANTS DOES THE LARGEST CITY IN CANADA HAVE?
+influencedBy,birthPlace,associatedMusicalArtist,country,associatedBand,state,spouse,deathPlace,successor,isPartOf
+===========================
+WHO WAS CALLED FRANK THE TANK?
+influencedBy,successor,associatedBand,associatedMusicalArtist,spouse,birthPlace,team,battle,debutTeam,managerClub
+===========================
+WHEN DID DRACULA'S CREATOR DIE?
+successor,starring,child,influencedBy,battle,spouse,associatedBand,associatedMusicalArtist,relatedMeanOfTransportation,creator
+===========================
+WHO ARE THE PARENTS OF THE WIFE OF JUAN CARLOS I?
+associatedBand,associatedMusicalArtist,parent,birthPlace,successor,formerTeam,deathPlace,team,child,residence
+===========================
+IN WHICH TIME ZONE IS ROME?
+country,associatedMusicalArtist,team,associatedBand,managerClub,formerTeam,hometown,deathPlace,birthPlace,formerPartner
+===========================
+WHICH ELECTRONICS COMPANIES WERE FOUNDED IN BEIJING?
+location,subsidiary,parentCompany,hometown,birthPlace,locationCountry,company,knownFor,deathPlace,associatedBand
+===========================
+WHO WAS THE SUCCESSOR OF JOHN F. KENNEDY?
+successor,president,deputy,primeMinister,child,spouse,formerTeam,associatedBand,associatedMusicalArtist,team
+===========================
+IN WHICH U.S. STATE IS FORT KNOX LOCATED?
+location,nationality,spouse,successor,country,associatedBand,associatedMusicalArtist,mergedIntoParty,affiliation,owningCompany
+===========================
+HOW MANY SEATS DOES THE HOME STADIUM OF FC PORTO HAVE?
+location,successor,tenant,owner,party,region,associatedMusicalArtist,associatedBand,team,architect
+===========================
+WHO WROTE THE BOOK LES PILIERS DE LA TERRE?
+influenced,notableWork,knownFor,primeMinister,president,successor,associatedMusicalArtist,associatedBand,child,predecessor
+===========================
+WHICH PROFESSIONAL SURFERS WERE BORN ON THE PHILIPPINES?
+country,associatedBand,associatedMusicalArtist,birthPlace,influencedBy,spouse,relation,deathPlace,successor,predecessor
+===========================
+WHO PLAYED AGENT SMITH IN MATRIX?
+team,militaryBranch,occupation,country,debutTeam,formerTeam,commandStructure,portrayer,league,knownFor
+===========================
+IN WHICH PROGRAMMING LANGUAGE IS GIMP WRITTEN?
+sisterStation,broadcastNetwork,location,formerBroadcastNetwork,operatingSystem,language,isPartOf,regionServed,relatedMeanOfTransportation,predecessor
+===========================
+WHICH MOVIES STARRING MICKEY ROURKE WERE DIRECTED BY GUY RITCHIE?
+starring,spouse,award,editing,writer,musicComposer,producer,cinematography,narrator,director
+===========================
+WHO WROTE THE SONG HOTEL CALIFORNIA?
+influenced,primeMinister,president,successor,associatedMusicalArtist,associatedBand,notableWork,child,predecessor,knownFor
+===========================
+WHERE WAS BACH BORN?
+stateOfOrigin,hometown,residence,debutTeam,managerClub,deathPlace,country,birthPlace,formerTeam,team
+===========================
+WHICH MUSEUM IN NEW YORK HAS THE MOST VISITORS?
+location,birthPlace,formerTeam,influencedBy,associatedMusicalArtist,associatedBand,deathPlace,successor,team,battle
+===========================
+WHICH BOOKS BY KEROUAC WERE PUBLISHED BY VIKING PRESS?
+influencedBy,nationality,publisher,author,illustrator,owner,distributor,developer,notableWork,influenced
+===========================
+GIVE ME ALL CITIES IN NEW JERSEY WITH MORE THAN 100000 INHABITANTS.
+country,team,state,birthPlace,successor,formerTeam,isPartOf,deathPlace,almaMater,routeStart
+===========================
+WHERE DOES PICCADILLY START?
+country,birthPlace,formerTeam,associatedBand,team,battle,child,influencedBy,associatedMusicalArtist,school
+===========================
+SHOW ME ALL BOOKS IN ASIMOV'S FOUNDATION SERIES.
+knownFor,influenced,notableWork,series,associatedBand,associatedMusicalArtist,occupation,nationality,influencedBy,distributor
+===========================
+WHICH OF TIM BURTON'S FILMS HAD THE HIGHEST BUDGET?
+successor,associatedMusicalArtist,associatedBand,team,formerTeam,award,knownFor,birthPlace,spouse,notableWork
+===========================
+TO WHICH ARTISTIC MOVEMENT DID THE PAINTER OF THE THREE DANCERS BELONG?
+associatedBand,associatedMusicalArtist,influencedBy,birthPlace,president,successor,spouse,influenced,team,architect
+===========================
+WHERE IS SYNGMAN RHEE BURIED?
+location,stateOfOrigin,employer,recordLabel,occupation,college,deathPlace,birthPlace,team
+===========================
+WHO DESIGNED THE BROOKLYN BRIDGE?
+significantBuilding,instrument,designer,architect,artist,producer,designCompany,relatedMeanOfTransportation
+===========================
+WHICH SUBSIDIARY OF TUI TRAVEL SERVES BOTH GLASGOW AND DUBLIN?
+type,owner,owningCompany,parentCompany,birthPlace,location,almaMater,broadcastArea,religion,employer
+===========================
+WHAT IS THE BRIDGE WITH THE LONGEST SPAN?
+routeEnd,associatedBand,routeStart,routeJunction,associatedMusicalArtist,influencedBy,spouse,location,successor,party
+===========================
+WHO IS THE YOUNGEST PLAYER IN THE PREMIER LEAGUE?
+team,formerTeam,influencedBy,associatedBand,battle,successor,birthPlace,league,draftTeam,managerClub
+===========================
+HOW OFTEN DID JANE FONDA MARRY?
+president,influencedBy,associatedBand,associatedMusicalArtist,successor,sisterStation,relative,influenced,spouse,birthPlace
+===========================
+WHO WAS THE FIRST TO CLIMB MOUNT EVEREST?
+team,formerTeam,managerClub,successor,influencedBy,associatedBand,associatedMusicalArtist,president,birthPlace,battle
+===========================
+IN WHICH CITY WAS THE PRESIDENT OF MONTENEGRO BORN?
+country,birthPlace,state,deathPlace,isPartOf,education,occupation,nationality,almaMater,team
+===========================
+HOW TALL IS CLAUDIA SCHIFFER?
+successor,associatedMusicalArtist,associatedBand,influencedBy,spouse,operatingSystem,isPartOf,location,president,series
+===========================
+WHAT ARE THE NICKNAMES OF SAN FRANCISCO?
+influencedBy,successor,president,associatedBand,team,associatedMusicalArtist,formerTeam,instrument,militaryUnit,party
+===========================
+WHEN WAS JACK WOLFSKIN FOUNDED?
+stateOfOrigin,hometown,residence,nationality,debutTeam,managerClub,almaMater,country,birthPlace,formerTeam
+===========================
+IN WHICH CITY ARE THE HEADQUARTERS OF THE UNITED NATIONS?
+country,primeMinister,birthPlace,isPartOf,state,location,successor,locationCity,foundationPlace,headquarter
+===========================
+WHO CREATED BATMAN?
+creator,associatedMusicalArtist,associatedBand,knownFor
+===========================
+THROUGH WHICH COUNTRIES DOES THE YENISEI RIVER FLOW?
+successor,sourceCountry,country,associatedBand,influencedBy,associatedMusicalArtist,riverMouth,team,spouse,city
+===========================
+WHICH SCIENTIST IS KNOWN FOR THE MANHATTAN PROJECT AND THE NOBEL PEACE PRIZE?
+associatedMusicalArtist,associatedBand,influencedBy,knownFor,spouse,team,currentPartner,partner,location,formerTeam
+===========================
+WHO DISCOVERED CERES?
+associatedMusicalArtist,associatedBand
+===========================
+WAS THE CUBAN MISSILE CRISIS EARLIER THAN THE BAY OF PIGS INVASION?
+country,battle,deathPlace,birthPlace,team,influencedBy,formerTeam,successor,associatedMusicalArtist,influenced
+===========================
+WHO WAS JOHN F. KENNEDY'S VICE PRESIDENT?
+associatedBand,president,associatedMusicalArtist,relation,starring,successor,almaMater,relative,stateOfOrigin,child
+===========================
+WHICH INGREDIENTS DO I NEED FOR CARROT CAKE?
+spouse,successor,associatedBand,associatedMusicalArtist,formerTeam,influencedBy,child,vicePresident,employer,president
+===========================
+IS THE WIFE OF PRESIDENT OBAMA CALLED MICHELLE?
+spouse,parent,associatedBand,successor,associatedMusicalArtist,influenced,child,predecessor,president,influencedBy
+===========================
+WAS THE WIFE OF PRESIDENT LINCOLN CALLED MARY?
+parent,spouse,influenced,president,successor,associatedBand,associatedMusicalArtist,child,predecessor,team
+===========================
+DOES THE ISAR FLOW INTO A LAKE?
+riverMouth,influencedBy,sourceCountry,party,associatedMusicalArtist,city,associatedBand,team,occupation,successor
+===========================
+HOW MUCH DID PULP FICTION COST?
+associatedMusicalArtist,associatedBand,notableWork,influencedBy,formerTeam,president,successor,team,author,writer
+===========================
+GIVE ME ALL CANADIAN GRUNGE RECORD LABELS.
+recordLabel,associatedBand,associatedMusicalArtist,successor,team,influencedBy,formerTeam,nationality,militaryUnit,battle
+===========================
+WHICH MUSEUM EXHIBITS THE SCREAM BY MUNCH?
+location,hometown,birthPlace,associatedMusicalArtist,associatedBand,writer,starring,producer,award,predecessor
+===========================
+WHO WAS MARRIED TO PRESIDENT CHIRAC?
+successor,associatedMusicalArtist,child,spouse,associatedBand,parent,restingPlace,relative,relation,predecessor
+===========================
+WHAT IS THE CURRENCY OF THE CZECH REPUBLIC?
+associatedBand,team,influencedBy,formerTeam,associatedMusicalArtist,successor,primeMinister,spouse,birthPlace,location
+===========================
+IS THERE A VIDEO GAME CALLED BATTLE CHESS?
+formerTeam,associatedMusicalArtist,associatedBand,team,draftTeam,college,birthPlace,riverMouth,president,successor
+===========================
+WHAT IS THE HIGHEST MOUNTAIN IN ITALY?
+locatedInArea,mountainRange,associatedBand,influencedBy,associatedMusicalArtist,country,spouse,successor,state,militaryUnit
+===========================
+WHICH COMPANIES PRODUCE HOVERCRAFTS?
+location,subsidiary,associatedBand,associatedMusicalArtist,locationCountry,product,country,locationCity,foundationPlace,parentCompany
+===========================
+WHEN WAS THE TITANIC COMPLETED?
+notableWork,team,education,series,almaMater,formerTeam,training,associatedBand,starring,award
+===========================
+HOW MANY PEOPLE LIVE IN THE CAPITAL OF AUSTRALIA?
+deathPlace,birthPlace,country,hometown,nationality,successor,isPartOf,state,president,influencedBy
+===========================
+IN WHICH COUNTRIES DO PEOPLE SPEAK JAPANESE?
+associatedMusicalArtist,associatedBand,successor,spouse,influencedBy,country,regionServed,child,primeMinister,president
+===========================
+HOW TALL IS AMAZON EVE?
+successor,associatedMusicalArtist,associatedBand,influencedBy,spouse,operatingSystem,isPartOf,location,president,series
+===========================
+IN WHICH COUNTRY IS MECCA LOCATED?
+country,birthPlace,state,location,hometown,nationality,associatedBand,artist,producer,deathPlace
+===========================
+WHO PAINTED THE STORM ON THE SEA OF GALILEE?
+country,influencedBy,riverMouth,hometown,associatedBand,team,sourceCountry,origin,influenced,birthPlace
+===========================
+WHO IS THE YOUNGEST DARTS PLAYER?
+formerTeam,team,birthPlace,influencedBy,associatedBand,college,associatedMusicalArtist,debutTeam,successor,militaryUnit
+===========================
+IN WHICH FILMS DID JULIA ROBERTS AS WELL AS RICHARD GERE PLAY?
+award,associatedBand,influencedBy,associatedMusicalArtist,president,successor,knownFor,primeMinister,spouse,birthPlace
+===========================
+GIVE ME ALL VIDEO GAMES PUBLISHED BY MEAN HAMSTER SOFTWARE.
+influencedBy,associatedBand,associatedMusicalArtist,nationality,successor,spouse,president,formerTeam,publisher,team
+===========================
+WHO WROTE THE BOOK THE PILLARS OF THE EARTH?
+notableWork,influenced,knownFor,associatedBand,associatedMusicalArtist,crosses,successor,president,militaryBranch,party
+===========================
+DOES BREAKING BAD HAVE MORE EPISODES THAN GAME OF THRONES?
+series,team,formerTeam,associatedBand,associatedMusicalArtist,primeMinister,genre,relative,president,knownFor
+===========================
+WHO IS THE FOUNDER OF PENGUIN BOOKS?
+associatedBand,associatedMusicalArtist,knownFor,influencedBy,religion,employer,recordLabel,party,occupation,nationality
+===========================
+IS MICHELLE OBAMA THE WIFE OF BARACK OBAMA?
+parent,spouse,associatedBand,influenced,successor,associatedMusicalArtist,child,predecessor,president,influencedBy
+===========================
+GIVE ME ALL ACTORS STARRING IN MOVIES DIRECTED BY WILLIAM SHATNER.
+award,starring,director,writer,cinematography,editing,producer,parent,musicComposer,spouse
+===========================
+HOW HIGH IS THE LIGHTHOUSE IN COLOMBO?
+location,associatedBand,influencedBy,spouse,associatedMusicalArtist,district,city,country,servingRailwayLine,isPartOf
+===========================
+WHAT IS THE CAPITAL OF CAMEROON?
+birthPlace,associatedBand,influencedBy,deathPlace,country,largestCity,isPartOf,state,spouse,associatedMusicalArtist
+===========================
+WHAT DOES IYCM STAND FOR?
+monarch,influencedBy,associatedBand,child,spouse,associatedMusicalArtist,vicePresident,successor,recordLabel,primeMinister
+===========================
+GIVE ME ALL MEMBERS OF PRODIGY.
+associatedBand,associatedMusicalArtist,successor,influencedBy,nationality,formerTeam,relation,predecessor,spouse,affiliation
+===========================
+WHAT COUNTRY IS SITECORE FROM?
+associatedBand,associatedMusicalArtist,team,almaMater,birthPlace,influenced,location,militaryBranch,nationality,musicalArtist
+===========================
+GIVE ME ALL SWEDISH OCEANOGRAPHERS.
+successor,influencedBy,associatedMusicalArtist,associatedBand,influenced,battle,nationality,formerTeam,team,militaryUnit
+===========================
+WHO WROTE THE GAME OF THRONES THEME?
+series,team,successor,formerTeam,genre,league,associatedBand,associatedMusicalArtist,primeMinister,publisher
+===========================
+WHO IS THE MAYOR OF ROTTERDAM?
+birthPlace,residence,deathPlace,influencedBy,associatedBand,spouse,successor,associatedMusicalArtist,knownFor,currentPartner
+===========================
+HOW HIGH IS THE MOUNT EVEREST?
+associatedBand,influencedBy,spouse,associatedMusicalArtist,successor,instrument,relative,influenced,child,primeMinister
+===========================
+WHO CREATED WIKIPEDIA?
+creator,associatedMusicalArtist,associatedBand,knownFor
+===========================
+HOW MANY PEOPLE LIVE IN POLAND?
+deathPlace,birthPlace,hometown,country,nationality,spouse,locationCountry,president,influencedBy,successor
+===========================
+WHICH CITY HAS THE MOST INHABITANTS?
+country,influencedBy,associatedBand,associatedMusicalArtist,state,battle,formerTeam,successor,birthPlace,district
+===========================
+WHO DEVELOPED SLACK?
+manufacturer,influencedBy,spouse,distributor,developer,publisher,associatedMusicalArtist
+===========================
+IN WHICH COUNTRY DOES THE GANGES START?
+associatedMusicalArtist,influencedBy,associatedBand,spouse,child,successor,country,birthPlace,artist,producer
+===========================
+WHO IS STARRING IN SPANISH MOVIES PRODUCED BY BENICIO DEL TORO?
+award,associatedBand,associatedMusicalArtist,starring,producer,writer,director,deathPlace,cinematography,narrator
+===========================
+WHO ARE THE DEVELOPERS OF DBPEDIA?
+locationCountry,associatedBand,instrument,location,birthPlace,associatedMusicalArtist,team,subsidiary,influencedBy,nationality
+===========================
+WHEN DID OPERATION OVERLORD COMMENCE?
+isPartOfMilitaryConflict,regionServed,locationCity,location,country,hubAirport,launchSite,place,relatedMeanOfTransportation,associatedMusicalArtist
+===========================
+WHAT WAS THE LAST MOVIE WITH ALEC GUINNESS?
+award,notableWork,president,knownFor,successor,associatedBand,associatedMusicalArtist,starring,team,influencedBy
