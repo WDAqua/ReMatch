@@ -2,6 +2,7 @@
 
 # ===== imports =====
 import numpy as np
+import itertools
 
 # ===== definitions =====
 class Splitter:
@@ -16,12 +17,18 @@ class Splitter:
             combinations.append(words[i]+' '+words[i+1]+' '+words[i+2])
         return combinations
     
-    def split(self,question,min=1,max=3):
+    def split(self,question,method='regular',min=1,max=3):
         result = []
         words = question.split()
-        combinations = np.array([words[start:end+1] 
-                 for start in xrange(len(words)) 
-                 for end in xrange(start, len(words))])
+        if method == 'regular':
+            combinations = np.array([words[start:end+1] 
+                     for start in xrange(len(words)) 
+                     for end in xrange(start, len(words))])
+        else:
+            combinations =[]
+            for i in xrange(1,len(words)):
+                combinations+=list(itertools.combinations(words,i))
+            combinations = np.array(combinations)
         filter = np.array([len(x)>=min and len(x)<=max  for x in combinations])
         for comb in combinations[filter]:
             result.append(' '.join(comb))
@@ -32,7 +39,7 @@ class Splitter:
         generalized_question = question
         for pos in pos_tags:
             if pos[1] == 'NNP':
-                generalized_question = generalized_question.replace(pos[0],'noun')
+                generalized_question = generalized_question.replace(pos[0],'') # remove noun
             if pos[1] == 'DT':
                 generalized_question = generalized_question.replace(pos[0],'determiner')
             if pos[1] == 'JJ' or pos[1] == 'JJR' or pos[1] == 'JJS':
@@ -44,11 +51,13 @@ class Splitter:
             if pos[1] == 'CC':
                 generalized_question = generalized_question.replace(pos[0],'conjunction')
             if pos[1] == 'MD':
-                generalized_question = generalized_question.replace(pos[0],'modal')              
+                generalized_question = generalized_question.replace(pos[0],'modal')
+            #if pos[1] == 'IN':
+            #    generalized_question = generalized_question.replace(pos[0],'preposition')              
         return generalized_question
             
 # ===== main testing =====          
 if __name__ == "__main__":
     splitter = Splitter()
     question = 'Hello yaser you are the man'
-    print(splitter.split(question))
+    print(splitter.split(question,method='comb'))

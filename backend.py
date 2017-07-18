@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from scipy import spatial
 
 # ===== definitions =====
-def processPattyData(pattyPath='dbpedia-relation-paraphrases_json.txt',glovePath='../glove.6B.50d.txt', vectorMethod='concat'):
+def processPattyData(pattyPath='dbpedia-relation-paraphrases_json.txt',glovePath='../glove.6B.50d.txt'):
     patty = PattyReader(path=pattyPath)
     glove = Embedder(path =glovePath)
     patty.processData()
@@ -18,7 +18,7 @@ def processPattyData(pattyPath='dbpedia-relation-paraphrases_json.txt',glovePath
     for label,patterns in patty.patterns.iteritems():
         for pattern in patterns:
             #print(pattern)
-            v = glove.getVector(pattern,method=vectorMethod)
+            v = glove.getVector(pattern)
             v = np.append(v,key)
             mat.append(v)
         key = key +1
@@ -49,6 +49,8 @@ def padVectors(mat, length=None):
     return newMat, maxLength
 
 def calculateSimilarity(vects,mat):
+    print('vects',vects.shape)
+    print('mat',mat.shape)
     return cosine_similarity(vects,mat)
 
 # ===== main testing =====          
