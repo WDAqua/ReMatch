@@ -151,3 +151,7 @@ urllib3-1\.21\.1\.dist-info/
 cython\.py
 
 six\.py
+
+*.dat
+
+*.pyc
