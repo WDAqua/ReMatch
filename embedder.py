@@ -22,7 +22,7 @@ class Embedder:
         self.gloveModel = Glove.load_stanford(path)
         self.length = int(re.findall('\.[0-9][0-9][0-9]?d',path)[0][1:-1])
         self.fixPatterns = fixPatterns
-        print('Done loading GloVe model')
+        #print('Done loading GloVe model')
         
     # methods
     def getVector(self, word):
@@ -32,12 +32,12 @@ class Embedder:
                     word = self.__use_suggessions__(word)
                     if len(word.split()) == 1:
                         if not self.gloveModel.dictionary.has_key(word.lower()):
-                            print(word,'not found')
+                            #print(word,'not found')
                             return np.zeros(self.length)
                     else:
                         return self.getVector(word)
                 else:
-                   print(word,'not found')
+                   #print(word,'not found')
                    return np.zeros(self.length) 
             index = self.gloveModel.dictionary[word.lower()]
             return self.gloveModel.word_vectors[index]

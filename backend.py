@@ -49,8 +49,8 @@ def padVectors(mat, length=None):
     return newMat, maxLength
 
 def calculateSimilarity(vects,mat):
-    print('vects',vects.shape)
-    print('mat',mat.shape)
+    #print('vects',vects.shape)
+    #print('mat',mat.shape)
     return cosine_similarity(vects,mat)
 
 # ===== main testing =====          
