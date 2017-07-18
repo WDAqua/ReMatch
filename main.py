@@ -6,7 +6,7 @@ import frontend
 import backend
 import numpy as np
 import JsonQueryParser as qald
-import pickle
+import cPickle  as pickle
 
 # ======= consts =============
 
@@ -80,7 +80,9 @@ if __name__ == "__main__":
     maxLength=np.load('maxLength.dat')
     glove = load_data('glove.dat')
     patty = load_data('patty.dat')
-    vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, readQuestion())
+    patty.processData()
+    print('Hello')
+    #vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, readQuestion())
     '''questionsDatabase = qald.QueryDataBase('qald-7-train-multilingual.json')
     questions = questionsDatabase.openFile()
     questionsDatabase.createDataBase(questions)
