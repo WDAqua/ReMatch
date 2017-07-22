@@ -11,7 +11,7 @@ import cPickle  as pickle
 # ======= consts =============
 
 ''' number of winner relations for each part of the question '''
-NUM_WINNERS = 1
+NUM_WINNERS = 20
 
 ''' minimum length of combinatorials of the question'''
 MIN_LENGTH_COMP = 2
@@ -98,19 +98,27 @@ if __name__ == "__main__":
     glove = load_data('glove.dat')
     patty = load_data('patty.dat')
     patty.processData()
-    vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, readQuestion())
-    '''questionsDatabase = qald.QueryDataBase('qald-7-train-multilingual.json')
+    print('Hello')
+    #vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, readQuestion())
+    questionsDatabase = qald.QueryDataBase('qald-6-train-multilingual.json')
     questions = questionsDatabase.openFile()
     questionsDatabase.createDataBase(questions)
-    f = open('results.txt', 'w')
-    for question in questionsDatabase.database.keys():
+    count=0
+    matches=[]
+    for question in questionsDatabase.database.keys() :
         try:
-            print(question)
-            vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, question)
-            f.write('\r\n===========================\r\n')
-            f.write(question)
-            f.write('\r\n')
-            f.write(','.join(np.array(result[:10])[:,0]))
+            flag=False
+            for relation in questionsDatabase.database[question] :
+                if patty.patterns.has_key(relation):
+                    flag=True
+                    break
+            if not flag:
+                continue
+            count+=1        
+            _, _, _, _, _, _, _, finalCountWeightedSorted = processQuestion(glove,maxLength, patty, mat,question)
+            results=[x[0] for x in finalCountWeightedSorted]
+            match=[x for x in results[:3] if x in questionsDatabase.database[question]]
+            if len(match) > 0 :
+                matches.append((match[0],results.index(match[0])))
         except:
             continue
-    f.close()'''
