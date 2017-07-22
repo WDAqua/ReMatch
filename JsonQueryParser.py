@@ -8,10 +8,11 @@ import sys
 import json
 import os
 import unicodedata
+import re
 from collections import defaultdict
 
 pattern = "http://dbpedia.org/ontology"
-
+pattern2 = "dbo:"
 class QueryDataBase(object):
     def __init__(self, inputfilepath):
         self.inputfilepath = inputfilepath
@@ -38,8 +39,14 @@ class QueryDataBase(object):
          tmplist = tmpStr.split(" ")
          filterlist = []
          for i in range (0, len(tmplist)):
-             if pattern in tmplist[i]:
-                 filterlist.append(tmplist[i].lower())
+             if pattern2 in tmplist[i]:
+                  matchObj = re.match( 'dbo:.+', tmplist[i], re.M|re.I)
+                  if matchObj:
+                      filterlist.append(matchObj.group()[4:])
+             elif pattern in tmplist[i]:
+                 matchObj = re.match( '<http://dbpedia.org/ontology/.+>', tmplist[i], re.M|re.I)
+                 if matchObj:
+                     filterlist.append(tmplist[i][29:-1])         
          return filterlist
 
 
@@ -47,7 +54,7 @@ class QueryDataBase(object):
         for id in range (0, len(inputData['questions'])):
             if "en" == str(inputData['questions'][id]['question'][0]['language']):
                 tmpQue = inputData['questions'][id]['question'][0]['string']
-                tmpQue_str = (unicodedata.normalize('NFKD', tmpQue).encode('ascii','ignore')).upper()
+                tmpQue_str = (unicodedata.normalize('NFKD', tmpQue).encode('ascii','ignore'))
                 if inputData['questions'][id]['query'].has_key('sparql'):
                     try:
                         self.database[tmpQue_str] = self.patternList(str(inputData['questions'][id]['query']['sparql']))
