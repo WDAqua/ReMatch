@@ -20,15 +20,15 @@ class PattyReader:
     
     # methods
     def processData(self):
-        self.content.pop() # remove first
-        for line in self.content:
+        # remove first
+        for line in self.content[1:]:
             parts = line.split('\t')
             relation = parts[0]
             pattern = parts[1]
             # process pattern
             pattern = self.__fix_pattern__(pattern)
             if not self.patterns.has_key(parts[0]):
-                self.patterns[relation] = [self.__make_relation_as_pattern__(relation)]
+                self.patterns[relation] = []#[self.__make_relation_as_pattern__(relation)]
             self.patterns[relation].append(pattern) 
         totalCount = float(len(self.content)-1)
         for relation in self.patterns:

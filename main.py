@@ -11,7 +11,7 @@ import cPickle  as pickle
 # ======= consts =============
 
 ''' number of winner relations for each part of the question '''
-NUM_WINNERS = 10
+NUM_WINNERS = 1
 
 ''' minimum length of combinatorials of the question'''
 MIN_LENGTH_COMP = 2
@@ -19,16 +19,29 @@ MIN_LENGTH_COMP = 2
 ''' maximum length of combinatorials of the question'''
 MAX_LENGTH_COMP = 3
 
+''' apply the penitly style '''
+APPLY_PENILTY = False
+
+''' use text razor api to get relations '''
+USE_TEXT_RAZOR = True
+
+''' apply the synonyms style '''
+USE_SYNONYMS = False
+
 # ===== definitions =====
 
 def readQuestion():
-    return 'Who is the wife of Obama'
+    #return 'Who was the wife of Obama'
     #return 'as president'
-    #return 'wife of'
+    #return 'child of'
     #return 'To whom Barack Obama is married to'
     #return 'On which team does Ronaldo plays'
     #return 'With which team did Ronaldo plays ten games for'
     #return 'In which country was Beethoven born'
+    return 'which river flows through Bonn'
+    #return 'Give me all actors who were born in Paris after 1950.'
+    #return 'where in France is sparkling Wine produced'
+    #return 'who was named as president of the USA'
     #return raw_input("Please enter a question: ")
     
 def load_data(filePath):
@@ -53,36 +66,39 @@ def processPatty():
     return mat, maxLength, glove, patty
 
 def processQuestion(glove, maxLength, patty, mat,question):
-    vectors, parts, pos, gen_question = frontend.processQuestion(glove,question,minLen=MIN_LENGTH_COMP,maxLen=MAX_LENGTH_COMP)
-    vectors, _ = backend.padVectors(vectors,maxLength)
+    vectors, parts, pos, gen_question = frontend.processQuestion(glove,question,minLen=MIN_LENGTH_COMP,maxLen=MAX_LENGTH_COMP,useAPI=USE_TEXT_RAZOR)
+    #vectors, _ = backend.padVectors(vectors,maxLength)
     similarities = backend.calculateSimilarity(np.array(vectors),np.array(mat)[:,:-1])
     winnersNum = NUM_WINNERS
     finalCountUnweighted = {}
     for sim in similarities:
-        for index in np.argpartition(sim,-winnersNum)[-winnersNum:]:
-            #print('winner',index)
+        values = np.partition(list(set(sim)),kth=-winnersNum)[-winnersNum:]
+        indexes = []
+        for value in values:
+            for val in np.where(sim == value)[0]:
+                indexes.append(val)
+        for index in np.array(indexes).flatten():
             winner = patty.patterns.keys()[int(mat[index][-1])]
             if  finalCountUnweighted.has_key(winner):
                 finalCountUnweighted[winner] += 1  
             else:
                 finalCountUnweighted[winner] = 1
     finalCountWeighted = finalCountUnweighted.copy()
-    for relation in finalCountWeighted:
-        finalCountWeighted[relation] *= patty.weights[relation]
+    if APPLY_PENILTY:
+        for relation in finalCountWeighted:
+            finalCountWeighted[relation] *= patty.weights[relation]
     finalCountWeightedSorted = sorted(finalCountWeighted.items(), key=lambda x:x[1], reverse=True)
-    #print('done processing')
     return vectors, parts, pos, gen_question, similarities, finalCountUnweighted, finalCountWeighted, finalCountWeightedSorted
 
 # ===== main testing =====          
 if __name__ == "__main__":
-    #mat, maxLength, glove, patty = processPatty()
+    mat, maxLength, glove, patty = processPatty()
     mat=np.load('mat.dat')
     maxLength=np.load('maxLength.dat')
     glove = load_data('glove.dat')
     patty = load_data('patty.dat')
     patty.processData()
-    print('Hello')
-    #vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, readQuestion())
+    vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, readQuestion())
     '''questionsDatabase = qald.QueryDataBase('qald-7-train-multilingual.json')
     questions = questionsDatabase.openFile()
     questionsDatabase.createDataBase(questions)
