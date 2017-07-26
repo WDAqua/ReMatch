@@ -9,6 +9,7 @@ Semantic Lab project
 * practnlptool
 * textrazor
 * cPickle
+* distance
 
 ### Required data files
 * glove precomputed data files
@@ -29,6 +30,7 @@ PS. File names are self explanatory
 1. Textrazor_Api: the API wrapper for the textrazor service
 1. JsonQueryParser: the QALD dataset reader (edited)
 1. main: where the magic happens
+1. api: for the web UI interface
 
 
 ## Any other issues:
