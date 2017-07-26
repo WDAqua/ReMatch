@@ -7,11 +7,12 @@ import backend
 import numpy as np
 import JsonQueryParser as qald
 import cPickle  as pickle
+from distance import levenshtein as dist
 
 # ======= consts =============
 
 ''' number of winner relations for each part of the question '''
-NUM_WINNERS = 20
+NUM_WINNERS = 15
 
 ''' minimum length of combinatorials of the question'''
 MIN_LENGTH_COMP = 2
@@ -20,28 +21,32 @@ MIN_LENGTH_COMP = 2
 MAX_LENGTH_COMP = 3
 
 ''' apply the penitly style '''
-APPLY_PENILTY = False
+APPLY_PENILTY = True
 
 ''' use text razor api to get relations '''
 USE_TEXT_RAZOR = True
 
 ''' apply the synonyms style '''
-USE_SYNONYMS = False
+USE_SYNONYMS = True
+
+''' apply label comparison technique '''
+USE_LABEL_COMPARESION = True
 
 # ===== definitions =====
 
 def readQuestion():
-    #return 'Who was the wife of Obama'
+    #return 'Who is the wife of Obama'
     #return 'as president'
     #return 'child of'
     #return 'To whom Barack Obama is married to'
     #return 'On which team does Ronaldo plays'
     #return 'With which team did Ronaldo plays ten games for'
     #return 'In which country was Beethoven born'
-    return 'which river flows through Bonn'
+    #return 'which river flows through Bonn'
     #return 'Give me all actors who were born in Paris after 1950.'
     #return 'where in France is sparkling Wine produced'
     #return 'who was named as president of the USA'
+    return 'Who was the successor of John F. Kennedy?'
     #return raw_input("Please enter a question: ")
     
 def load_data(filePath):
@@ -55,6 +60,16 @@ def load_data(filePath):
 def save_data(data,filePath):
     with open(filePath, "wb") as f:
         pickle.dump(data, f)
+        
+def calcDistance(label,relations):
+    minValue = 9999999
+    minString = None
+    for relation in relations:
+        distance = dist(label,relation)
+        if distance < minValue:
+            minValue = distance
+            minString = relation
+    return minString
 
 def processPatty():
     mat, glove, patty = backend.processPattyData()#,pattyPath='yago-relation-paraphrases_json.txt')#glovePath='C:/Users/Yaser/Desktop/glove.twitter.27B.25d.txt')
@@ -66,8 +81,13 @@ def processPatty():
     return mat, maxLength, glove, patty
 
 def processQuestion(glove, maxLength, patty, mat,question):
-    vectors, parts, pos, gen_question = frontend.processQuestion(glove,question,minLen=MIN_LENGTH_COMP,maxLen=MAX_LENGTH_COMP,useAPI=USE_TEXT_RAZOR)
+    vectors, parts, pos, gen_question, labels = frontend.processQuestion(glove,question,minLen=MIN_LENGTH_COMP,maxLen=MAX_LENGTH_COMP,useAPI=USE_TEXT_RAZOR,useSynonyms=USE_SYNONYMS)
     #vectors, _ = backend.padVectors(vectors,maxLength)
+    if USE_LABEL_COMPARESION:
+        for label in labels:
+            if patty.patterns.has_key(label):
+                print(label)
+            #print(label,calcDistance(label,patty.patterns.keys()))
     similarities = backend.calculateSimilarity(np.array(vectors),np.array(mat)[:,:-1])
     winnersNum = NUM_WINNERS
     finalCountUnweighted = {}
@@ -92,33 +112,25 @@ def processQuestion(glove, maxLength, patty, mat,question):
 
 # ===== main testing =====          
 if __name__ == "__main__":
-    mat, maxLength, glove, patty = processPatty()
+    #mat, maxLength, glove, patty = processPatty()
     mat=np.load('mat.dat')
     maxLength=np.load('maxLength.dat')
     glove = load_data('glove.dat')
     patty = load_data('patty.dat')
     patty.processData()
-    print('Hello')
-    #vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, readQuestion())
-    questionsDatabase = qald.QueryDataBase('qald-6-train-multilingual.json')
+    vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, readQuestion())
+    '''questionsDatabase = qald.QueryDataBase('qald-7-train-multilingual.json')
     questions = questionsDatabase.openFile()
     questionsDatabase.createDataBase(questions)
-    count=0
-    matches=[]
-    for question in questionsDatabase.database.keys() :
+    f = open('results.txt', 'w')
+    for question in questionsDatabase.database.keys():
         try:
-            flag=False
-            for relation in questionsDatabase.database[question] :
-                if patty.patterns.has_key(relation):
-                    flag=True
-                    break
-            if not flag:
-                continue
-            count+=1        
-            _, _, _, _, _, _, _, finalCountWeightedSorted = processQuestion(glove,maxLength, patty, mat,question)
-            results=[x[0] for x in finalCountWeightedSorted]
-            match=[x for x in results[:3] if x in questionsDatabase.database[question]]
-            if len(match) > 0 :
-                matches.append((match[0],results.index(match[0])))
+            print(question)
+            vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, question)
+            f.write('\r\n===========================\r\n')
+            f.write(question)
+            f.write('\r\n')
+            f.write(','.join(np.array(result[:10])[:,0]))
         except:
             continue
+    f.close()'''

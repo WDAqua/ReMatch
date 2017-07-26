@@ -20,9 +20,10 @@ def getBinaryRelations(string,extractors=["words", "relations"]):
     client = TextRazor(API_KEY,extractors=extractors)
     response = client.analyze(string)
     result = []
+    root = [w.token for w in response.words() if w.parent_position is None]
     for relation in response.properties():
-        result.append(RelationResult(relation.predicate_positions,' '.join([w.token for w in relation.predicate_words]),relation.property_positions,' '.join([w.token for w in relation.property_words])))
-    return result
+        result.append(RelationResult(relation.predicate_positions,' '.join([w.token for w in relation.predicate_words]),relation.property_positions,' '.join([w.token for w in relation.property_words])))      
+    return result, root
         
 if __name__ == "__main__":
-    pp(getBinaryRelations(string='Who is the 16th president of the USA'))
+    pp(getBinaryRelations(string='On which team does Ronaldo plays'))
