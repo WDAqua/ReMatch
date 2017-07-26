@@ -1,7 +1,7 @@
 from textrazor import TextRazor
 from pprint import pprint as pp
 
-API_KEY = "49faf5a9d3491c2c3c2b1cf30f53c49b58d8cdd1645cf8794a6d7d27"   
+API_KEY = "8ca44890eb757ac572861b40845e88e5fdb65d2894acc9cac9ac3d20"   
 
 class RelationResult:
     def __init__(self, predicate_positions, predicate_words, property_positions, property_words):
