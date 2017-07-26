@@ -24,7 +24,7 @@ MAX_LENGTH_COMP = 3
 APPLY_PENILTY = True
 
 ''' use text razor api to get relations '''
-USE_TEXT_RAZOR = True
+USE_TEXT_RAZOR = False
 
 ''' apply the synonyms style '''
 USE_SYNONYMS = True
@@ -125,12 +125,19 @@ if __name__ == "__main__":
     f = open('results.txt', 'w')
     for question in questionsDatabase.database.keys():
         try:
-            print(question)
-            vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, question)
-            f.write('\r\n===========================\r\n')
-            f.write(question)
-            f.write('\r\n')
-            f.write(','.join(np.array(result[:10])[:,0]))
+            flag=False
+            for relation in questionsDatabase.database[question] :
+                if patty.patterns.has_key(relation):
+                    flag=True
+                    break
+            if not flag:
+                continue
+            count+=1        
+            _, _, _, _, _, _, _, finalCountWeightedSorted = processQuestion(glove,maxLength, patty, mat,question)
+            results=[x[0] for x in finalCountWeightedSorted]
+            match=[x for x in results[:1] if x in questionsDatabase.database[question]]
+            if len(match) > 0 :
+                matches.append((match[0],results.index(match[0])))
         except:
             continue
     f.close()'''
