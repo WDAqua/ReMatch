@@ -2,7 +2,7 @@
 
 # ===== imports =====
 from pprint import pprint as pp
-import re
+import utils
 
 # ===== definitions =====
 class PattyReader:
@@ -28,7 +28,7 @@ class PattyReader:
             # process pattern
             pattern = self.__fix_pattern__(pattern)
             if not self.patterns.has_key(parts[0]):
-                self.patterns[relation] = []#[self.__make_relation_as_pattern__(relation)]
+                self.patterns[relation] = []# [self.__make_relation_as_pattern__(relation)]
             self.patterns[relation].append(pattern) 
         totalCount = float(len(self.content)-1)
         for relation in self.patterns:
@@ -39,7 +39,7 @@ class PattyReader:
         pp(self.patterns.items()[0:2])
         
     def __make_relation_as_pattern__(self,relation):
-        return ' '.join(re.findall(r'[A-Z]?[a-z]+|[A-Z]+(?=[A-Z]|$)', relation)).lower()
+        return utils.splitCamelCase(relation)
       
     # private methods
     def __fix_pattern__(self,pattern):

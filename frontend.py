@@ -16,14 +16,12 @@ def processQuestion(gloveModel, question, minLen=1,maxLen=3, useAPI=False, useSy
     if question[-1] == '?' or question[-1] == '.':
         question=question[:-1]
     gen_question = splitter.generalize(question, pos)
-   
     labels = []
     if not useAPI:
         parts = list(splitter.split(gen_question,min=minLen,max=maxLen))
     else:
         apiResult, _ = api.getBinaryRelations(question)
-        parts = [rel.predicate for rel in apiResult]
-        
+        parts = [rel.predicate for rel in apiResult if len(rel.predicate_positions_) > 1]
         for part in parts:
             if len(part.split()) > 1:
                 labels.append(part.split()[0]+''.join(''.join([w[0].upper(), w[1:].lower()]) for w in part.split()[1:]))      

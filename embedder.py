@@ -28,7 +28,7 @@ class Embedder:
     def getVector(self, word):
         if len(word.split()) == 1:
             if not self.gloveModel.dictionary.has_key(word.lower()):
-                if not self.fixPatterns:
+                if self.fixPatterns:
                     word = self.__use_suggessions__(word)
                     if len(word.split()) == 1:
                         if not self.gloveModel.dictionary.has_key(word.lower()):
@@ -45,11 +45,11 @@ class Embedder:
             result = np.array([])
             for w in word.split():
                 v = self.getVector(w)
-                if v is None:
-                    continue
                 if len(result) == 0:
                     result = np.zeros(self.length) 
-                result = np.add(result,v)/2.
+                all_zeros = not v.any()
+                if not all_zeros:
+                    result = np.add(result,v)/2.
             return result
         
     def __use_suggessions__(self,phrase):
