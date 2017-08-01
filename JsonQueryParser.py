@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """This program execute
    Run:
-   $ python JsonQueryParser.py
+   $ python JsonQueryParser.py qald-file.json
 
 """
 import sys
@@ -50,35 +50,59 @@ class QueryDataBase(object):
          return filterlist
 
 
-    def createDataBase(self, inputData):
-        for id in range (0, len(inputData['questions'])):
-            if "en" == str(inputData['questions'][id]['question'][0]['language']):
-                tmpQue = inputData['questions'][id]['question'][0]['string']
-                tmpQue_str = (unicodedata.normalize('NFKD', tmpQue).encode('ascii','ignore'))
-                if inputData['questions'][id]['query'].has_key('sparql'):
-                    try:
-                        self.database[tmpQue_str] = self.patternList(str(inputData['questions'][id]['query']['sparql']))
-                    except:
+    def createDataBase(self, inputData) :
+        
+        if inputData['dataset']['id'] == 'qald-6-train-multilingual' :
+        
+            for id in range (0, len(inputData['questions'])):
+                if "en" == str(inputData['questions'][id]['question'][0]['language']):
+                    tmpQue = inputData['questions'][id]['question'][0]['string']
+                    tmpQue_str = (unicodedata.normalize('NFKD', tmpQue).encode('ascii','ignore')).upper()
+                    if inputData['questions'][id]['query'].has_key('sparql'):
+                        try:
+                            self.database[tmpQue_str] = self.patternList(str(inputData['questions'][id]['query']['sparql']))
+                        except:
+                            self.database[tmpQue_str] = []
+                    else:
                         self.database[tmpQue_str] = []
-                else:
-                    self.database[tmpQue_str] = []
-        #print self.database
-
-
+        
+        elif inputData['dataset']['id'] == 'qald-5_train' :
+        
+            for id in range (0, len(inputData['questions'])) :
+                if "en" == str(inputData['questions'][id]['body'][0]['language']) :
+                    tmpQue = inputData['questions'][id]['body'][0]['string']
+                    tmpQue_str = (unicodedata.normalize('NFKD', tmpQue).encode('ascii','ignore')).upper()
+               
+                    # some entries do not have query
+                    if 'query' in inputData['questions'][id]:
+                        try:
+                            self.database[tmpQue_str] = self.patternList(str(inputData['questions'][id]['query']))
+                        except:
+                            self.database[tmpQue_str] = []
+                    else:
+                        self.database[tmpQue_str] = []
+        
+        else :
+            print "Invalid QALD dataset key"
+    
+    
     def getQueryResult(self, query):
         precision = 0.0
         count = 0.0
+        
         if query in self.database.keys():
             print "Query Found !!"
             uriQueryList = self.user_input_uri_list()
             checkList = self.database[query]
-            for i in uriQueryList:
-                if i in checkList:
-                    count+=1.0
-            precision = count/len(checkList)
+            
+            if len(checkList) > 0 :
+                for i in uriQueryList:
+                    if i in checkList:
+                        count += 1.0
+                
+                precision = count/len(checkList)
         else:
             print "Query Not Found !!!!!"
-
 
         return precision
 
@@ -101,17 +125,23 @@ class QueryDataBase(object):
 
 
 def main():
+    
+    if len(sys.argv) > 1 :
+        inputfilepath = sys.argv[1]
+    else :
+        print "Usage: $ python JsonQueryParser.py qald-file.json"
+        return 1
 
     print "Example :"
     print "Type Query: What is the birth name of Angela Merkel?"
     print "Type count: 2"
     print "Type Uri  : <http://dbpedia.org/ontology/birthName>\n\n"
-    inputfilepath = "qald-6-train-multilingual.json"
 
+    #inputfilepath = "qald-6-train-multilingual.json"
+    #inputfilepath = "qald-5_train.json"
+    
     queryDataBase = QueryDataBase(inputfilepath)
-
     inputData = queryDataBase.openFile()
-
     queryDataBase.createDataBase(inputData)
 
     while True:
