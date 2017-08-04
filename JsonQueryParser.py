@@ -52,7 +52,9 @@ class QueryDataBase(object):
 
     def createDataBase(self, inputData) :
         
-        if inputData['dataset']['id'] == 'qald-6-train-multilingual' :
+        dataset_id = inputData['dataset']['id']
+        
+        if dataset_id == 'qald-6-train-multilingual' or dataset_id == 'qald-7-train-multilingual':
         
             for id in range (0, len(inputData['questions'])):
                 if "en" == str(inputData['questions'][id]['question'][0]['language']):
@@ -66,7 +68,7 @@ class QueryDataBase(object):
                     else:
                         self.database[tmpQue_str] = []
         
-        elif inputData['dataset']['id'] == 'qald-5_train' :
+        elif dataset_id == 'qald-5_train' :
         
             for id in range (0, len(inputData['questions'])) :
                 if "en" == str(inputData['questions'][id]['body'][0]['language']) :
@@ -81,7 +83,7 @@ class QueryDataBase(object):
                             self.database[tmpQue_str] = []
                     else:
                         self.database[tmpQue_str] = []
-        
+    
         else :
             print "Invalid QALD dataset key"
     
