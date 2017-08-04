@@ -1,0 +1,143 @@
+Question,Actual results,Our results Pos1,Our results Pos2,Our results Pos3,Our results Pos4,Our results Pos5,Our results Pos6,Our results Pos7,Our results Pos8,Our results Pos9,Our results Pos10
+Who is the mayor of the capital of French Polynesia?,capital,capital,part,birthPlace,residence,deathPlace,country,isPartOf,state,location,region
+Which river does the Brooklyn Bridge cross?,crosses,writer,crosses,associatedBand,associatedMusicalArtist,influencedBy,spouse,successor,team,riverMouth,country
+How many inhabitants does the largest city in Canada have?,largestCity,city,largestCity,country,birthPlace,location,deathPlace,state,isPartOf,residence,foundationPlace
+Who created Family Guy?,creator,creator,associatedBand,associatedMusicalArtist,knownFor,occupation,influencedBy,president,spouse,trainer,academicAdvisor
+Who created Wikipedia?,author,creator,associatedBand,associatedMusicalArtist,knownFor,occupation,influencedBy,president,spouse,trainer,academicAdvisor
+Who is the president of Eritrea?,leader,residence,birthPlace,almaMater,country,occupation,knownFor,employer,deathPlace,party,nationality
+In which country does the Nile start?,sourceCountry,associatedBand,associatedMusicalArtist,influencedBy,spouse,president,successor,child,birthPlace,relative,partner
+To which party does the mayor of Paris belong?,party,party,birthPlace,residence,deathPlace,region,restingPlace,routeStart,,,
+How often did Jane Fonda marry?,spouse,parent,associatedBand,associatedMusicalArtist,spouse,successor,influencedBy,president,child,predecessor,influenced
+Does Abraham Lincoln's death place have a website?,deathPlace,relation,associatedBand,associatedMusicalArtist,successor,influencedBy,almaMater,president,education,birthPlace,college
+Give me all cities in New Jersey with more than 100000 inhabitants.,isPartOf,city,country,state,location,isPartOf,campus,birthPlace,district,locationCity,province
+When did Dracula's creator die?,creator,creator,child,associatedMusicalArtist,associatedBand,spouse,team,successor,starring,influencedBy,president
+Who was married to president Chirac?,spouse,parent,spouse,child,successor,associatedBand,associatedMusicalArtist,relation,predecessor,relative,influenced
+In which countries do people speak Japanese?,language,spouse,associatedBand,associatedMusicalArtist,team,influencedBy,successor,president,child,birthPlace,nationality
+Which awards did Douglas Hofstadter win?,award,award,team,formerTeam,birthPlace,president,country,occupation,associatedBand,associatedMusicalArtist,influencedBy
+Is Rita Wilson the wife of Tom Hanks?,spouse,spouse,writer,relation,child,associatedBand,associatedMusicalArtist,successor,parent,influenced,starring
+Who is the son of Sonny and Cher?,parent,spouse,predecessor,relation,parent,successor,relative,associatedMusicalArtist,associatedBand,child,trainer
+Who composed the music for Harold and Maude?,musicComposer,spouse,company,associatedBand,associatedMusicalArtist,team,formerTeam,creator,portrayer,voice,employer
+Who wrote the book The Pillars of the Earth?,author,party,writer,associatedBand,associatedMusicalArtist,influenced,knownFor,successor,occupation,influencedBy,notableWork
+Whom did Lance Bass marry?,spouse,parent,spouse,child,successor,associatedMusicalArtist,associatedBand,predecessor,influenced,relative,relation
+Who are the developers of DBpedia?,developer,developer,country,birthPlace,nationality,deathPlace,militaryBranch,region,residence,,
+Who discovered Ceres?,discoverer,developer,associatedBand,associatedMusicalArtist,influencedBy,owner,successor,instrument,spouse,president,party
+Is Christian Bale starring in Velvet Goldmine?,starring,discoverer,associatedMusicalArtist,associatedBand,team,formerTeam,country,influencedBy,primeMinister,deathCause,successor
+Who is the host of the BBC Wildlife Specials?,presenter,team,associatedBand,knownFor,associatedMusicalArtist,formerTeam,successor,spouse,occupation,draftTeam,influencedBy
+How many seats does the home stadium of FC Porto have?,ground,hometown,location,tenant,owner,country,state,operator,birthPlace,restingPlace,residence
+In which country does the Ganges start?,sourceCountry,associatedBand,associatedMusicalArtist,influencedBy,spouse,president,successor,child,birthPlace,relative,partner
+What is the capital of Canada?,capital,capital,country,birthPlace,isPartOf,state,location,deathPlace,restingPlace,successor,district
+What is the highest mountain in Italy?,locatedInArea,country,location,locatedInArea,state,city,isPartOf,foundationPlace,locationCity,district,birthPlace
+Where is Syngman Rhee buried?,restingPlace,restingPlace,birthPlace,deathPlace,child,placeOfBurial,residence,spouse,influencedBy,partner,associatedBand
+Who created Batman?,creator,creator,associatedBand,associatedMusicalArtist,knownFor,occupation,influencedBy,president,spouse,trainer,academicAdvisor
+Who was the pope that founded the Vatican Television?,foundedBy,location,network,channel,country,creator,distributor,broadcastArea,starring,city,recordLabel
+In which military conflicts did Lawrence of Arabia participate?,battle,residence,birthPlace,deathPlace,almaMater,employer,team,occupation,knownFor,education,nationality
+How many companies were founded by the founder of Facebook?,foundedBy,foundedBy,associatedBand,associatedMusicalArtist,knownFor,party,occupation,foundedBy,keyPerson,religion,deathPlace
+Where was Bach born?,birthPlace,birthPlace,knownFor,deathPlace,relation,spouse,predecessor,parent,team,formerTeam,occupation
+Which museum in New York has the most visitors?,location,team,birthPlace,successor,part,associatedMusicalArtist,associatedBand,deathPlace,nationality,formerTeam,influenced
+Who played Gus Fring in Breaking Bad?,portrayer,award,team,formerTeam,stateOrigin,associatedBand,associatedMusicalArtist,birthPlace,league,country,managerClub
+Show me all books in Asimov's Foundation series.,series,series,nationality,formerTeam,birthPlace,team,draftTeam,recordLabel,associatedBand,starring,associatedMusicalArtist
+Which films did Stanley Kubrick direct?,director,team,president,associatedBand,associatedMusicalArtist,director,influencedBy,successor,award,spouse,knownFor
+What is the highest mountain in Australia?,locatedInArea,country,location,locatedInArea,state,city,isPartOf,foundationPlace,locationCity,district,birthPlace
+What is the location of the Houses of Parliament?,location,location,spouse,tenant,country,associatedBand,associatedMusicalArtist,birthPlace,district,isPartOf,state
+Show me Hemingway's autobiography.,author,author,spouse,team,associatedMusicalArtist,associatedBand,known,notableWork,knownFor,successor,influenced
+Who was the wife of U.S. president Lincoln?,spouse,spouse,child,parent,relation,successor,associatedMusicalArtist,associatedBand,relative,influenced,predecessor
+How many children did Benjamin Franklin have?,child,child,associatedBand,associatedMusicalArtist,influencedBy,successor,president,spouse,parent,birthPlace,predecessor
+Who was the successor of John F. Kennedy?,successor,successor,party,birthPlace,almaMater,country,president,deputy,occupation,primeMinister,nationality
+Is the wife of president Obama called Michelle?,spouse,spouse,associatedBand,associatedMusicalArtist,influenced,influencedBy,successor,birthPlace,country,league,team
+Is Michelle Obama the wife of Barack Obama?,spouse,spouse,child,lieutenant,successor,party,associatedBand,associatedMusicalArtist,parent,influenced,nationality
+List the children of Margaret Thatcher.,child,child,parent,associatedBand,associatedMusicalArtist,spouse,successor,formerTeam,formerCoach,influenced,birthPlace
+Is James Bond married?,spouse,associatedBand,spouse,child,successor,associatedMusicalArtist,parent,relation,,,
+Who is the editor of Forbes?,editor,editor,knownFor,employer,influenced,nationality,occupation,influencedBy,almaMater,associatedBand,team
+Who wrote the Game of Thrones theme?,composer,team,formerTeam,debutTeam,associatedBand,associatedMusicalArtist,birthPlace,draftTeam,league,college,nationality
+Give me all actors starring in Last Action Hero.,starring,trainer,primeMinister,successor,battle,predecessor,birthPlace,parent,president,influencedBy,associatedBand
+In which country is the Limerick Lake?,country,country,associatedMusicalArtist,associatedBand,spouse,influencedBy,birthPlace,successor,deathPlace,knownFor,team
+Who is the oldest child of Meryl Streep?,child,child,parent,spouse,successor,predecessor,relation,associatedMusicalArtist,associatedBand,relative,influenced
+Give me all video games published by Mean Hamster Software.,publisher,publisher,developer,nationality,computingPlatform,owner,distributor,,,,
+Who were the parents of Queen Victoria?,parent,parent,child,successor,spouse,associatedMusicalArtist,associatedBand,relation,relative,predecessor,influenced
+In which films did Julia Roberts as well as Richard Gere play?,starring,successor,associatedBand,president,associatedMusicalArtist,influencedBy,team,formerTeam,birthPlace,almaMater,deathPlace
+In which country is Mecca located?,country,country,location,state,city,isPartOf,locatedInArea,district,foundationPlace,servingRailwayLine,nearestCity
+Who developed Slack?,product,developer,publisher,influencedBy,manufacturer,spouse,distributor,computingPlatform,academicAdvisor,doctoralAdvisor,associatedMusicalArtist
+Give me all books by William Goldman with more than 300 pages.,author,nationality,associatedBand,associatedMusicalArtist,influencedBy,spouse,president,trainer,primeMinister,knownFor,occupation
+Who is the mayor of Rotterdam?,leaderName,party,birthPlace,residence,deathPlace,region,restingPlace,routeStart,,,
+What was the first Queen album?,artist,album,associatedMusicalArtist,associatedBand,producer,musicalBand,musicalArtist,artist,writer,recordLabel,previousWork
+What is the largest city in Australia?,largestCity,city,location,country,state,birthPlace,deathPlace,isPartOf,locatedInArea,foundationPlace,district
+Give me all launch pads operated by NASA.,operator,operated,party,owner,type,operatedBy,operator,associatedMusicalArtist,associatedBand,successor,country
+In which city did John F. Kennedy die?,deathPlace,city,influencedBy,associatedBand,president,successor,associatedMusicalArtist,team,tenant,birthPlace,owner
+In which city does Sylvester Stallone live?,residence,associatedBand,associatedMusicalArtist,influencedBy,spouse,president,successor,child,birthPlace,relative,partner
+Give me all movies directed by Francis Ford Coppola.,director,director,starring,writer,producer,editing,musicComposer,cinematography,narrator,author,series
+Which scientist is known for the Manhattan Project and the Nobel Peace Prize?,knownFor,knownFor,associatedBand,associatedMusicalArtist,owningCompany,influencedBy,spouse,knownFor,birthPlace,team,partner
+Is Christian Bale starring in Batman Begins?,starring,starring,award,birthPlace,team,spouse,associatedBand,associatedMusicalArtist,college,series,partner
+Does the Isar flow into a lake?,inflow,garrison,riverMouth,sourceCountry,country,successor,location,team,college,state,birthPlace
+Show me the book that Muhammad Ali wrote.,author,spouse,influencedBy,associatedMusicalArtist,writer,associatedBand,influenced,predecessor,child,president,primeMinister
+Where in France is sparkling wine produced?,location,starring,associatedMusicalArtist,associatedBand,producer,birthPlace,deathPlace,country,team,formerTeam,location
+Who was Vincent van Gogh inspired by?,influenced,influenced,influencedBy,team,associatedMusicalArtist,associatedBand,successor,president,spouse,relation,predecessor
+What country is Mount Everest in?,locatedInArea,country,associatedBand,associatedMusicalArtist,primeMinister,successor,birthPlace,influencedBy,nationality,president,spouse
+Was the wife of president Lincoln called Mary?,spouse,spouse,child,parent,relation,successor,associatedMusicalArtist,associatedBand,relative,influenced,predecessor
+Did Elvis Presley have children?,child,child,associatedMusicalArtist,associatedBand,parent,spouse,successor,,,,
+In which city does the Chile Route 68 end?,routeEnd,associatedBand,associatedMusicalArtist,influencedBy,spouse,president,successor,child,birthPlace,relative,partner
+Who developed the video game World of Warcraft?,developer,developer,associatedBand,associatedMusicalArtist,team,formerTeam,influencedBy,knownFor,birthPlace,country,hometown
+List all games by GMT.,publisher,team,formerTeam,associatedBand,publisher,developer,associatedMusicalArtist,portrayer,starring,spouse,instrument
+Who composed the soundtrack for Cameron's Titanic?,musicComposer,team,recordLabel,computingPlatform,associatedBand,associatedMusicalArtist,formerTeam,draftTeam,birthPlace,nationality,musicComposer
+Which television shows were created by Walt Disney?,creator,creator,associatedMusicalArtist,associatedBand,producer,starring,director,author,writer,designer,composer
+How many languages are spoken in Colombia?,language,spouse,birthPlace,nationality,deathPlace,hometown,influencedBy,citizenship,stateOfOrigin,country,associatedBand
+Where does Piccadilly start?,routeStart,party,team,associatedBand,associatedMusicalArtist,almaMater,formerTeam,influencedBy,spouse,birthPlace,child
+How many languages are spoken in Turkmenistan?,language,spouse,birthPlace,nationality,deathPlace,hometown,influencedBy,citizenship,stateOfOrigin,country,associatedBand
+Who wrote the book Les Piliers de la terre?,writer,writer,residence,spouse,associatedBand,associatedMusicalArtist,influenced,child,influencedBy,successor,knownFor
+To which artistic movement did the painter of The Three Dancers belong?,author,team,partner,influencedBy,associatedBand,associatedMusicalArtist,president,successor,almaMater,birthPlace,formerTeam
+Who wrote the song Hotel California?,writer,writer,influencedBy,associatedMusicalArtist,associatedBand,successor,primeMinister,influenced,spouse,predecessor,president
+List all episodes of the first season of the HBO television series The Sopranos.,series,team,formerTeam,series,debutTeam,league,managerClub,college,recordLabel,birthPlace,associatedBand
+Is Barack Obama a democrat?,party,birthPlace,successor,party,nationality,country,deathPlace,region,residence,lieutenant,team
+List all episodes of the first season of the HBO television series The Sopranos!,series,team,formerTeam,series,debutTeam,league,managerClub,college,recordLabel,birthPlace,associatedBand
+Who is the mayor of Tel Aviv?,leaderName,party,birthPlace,residence,deathPlace,region,restingPlace,routeStart,,,
+In which city did Nikos Kazantzakis die?,deathPlace,city,associatedMusicalArtist,associatedBand,successor,spouse,influencedBy,country,birthPlace,deathPlace,president
+Which companies produce hovercrafts?,product,product,associatedBand,associatedMusicalArtist,influencedBy,subsidiary,instrument,locationCountry,location,team,formerTeam
+Did Tesla win a nobel prize in physics?,award,team,birthPlace,college,award,formerTeam,occupation,battle,country,almaMater,education
+Which Indian company has the most employees?,location,employer,location,associatedBand,associatedMusicalArtist,almaMater,headquarter,hubAirport,regionServed,destination,targetAirport
+Do Prince Harry and Prince William have the same parents?,parent,parent,child,spouse,successor,associatedMusicalArtist,associatedBand,relation,predecessor,relative,birthPlace
+Which movies did Kurosawa direct?,director,series,president,associatedBand,associatedMusicalArtist,influencedBy,director,successor,award,spouse,primeMinister
+How many people live in the capital of Australia?,capital,capital,part,birthPlace,deathPlace,country,hometown,residence,isPartOf,state,location
+What country is Sitecore from?,foundationPlace,country,associatedBand,associatedMusicalArtist,primeMinister,successor,birthPlace,influencedBy,nationality,president,spouse
+What was the last movie with Alec Guinness?,starring,formerTeam,associatedBand,associatedMusicalArtist,spouse,influencedBy,starring,partner,team,producer,birthPlace
+Was U.S. president Jackson involved in a war?,battle,battle,birthPlace,associatedBand,associatedMusicalArtist,team,deathPlace,employer,debutTeam,religion,party
+Does Neymar play for Real Madrid?,team,formerTeam,team,league,associatedBand,college,managerClub,associatedMusicalArtist,debutTeam,draftTeam,birthPlace
+In which city was the president of Montenegro born?,birthPlace,birthPlace,residence,almaMater,country,occupation,knownFor,employer,deathPlace,party,nationality
+Which cities does the Weser flow through?,city,city,location,associatedMusicalArtist,associatedBand,known,influencedBy,successor,spouse,country,riverMouth
+List all the musicals with music by Elton John.,musicBy,musicalArtist,music,associatedBand,associatedMusicalArtist,writer,producer,artist,musicalBand,creator,portrayer
+What is the biggest stadium in Spain?,location,state,location,birthPlace,deathPlace,hometown,owner,locatedInArea,nearestCity,residence,predecessor
+Did Che Guevara have children?,child,child,associatedMusicalArtist,associatedBand,parent,spouse,successor,,,,
+What is the capital of Cameroon?,capital,capital,country,birthPlace,isPartOf,state,location,deathPlace,restingPlace,successor,district
+Who is the king of the Netherlands?,leader,child,predecessor,birthPlace,relation,deathPlace,restingPlace,successor,parent,relative,associatedBand
+Who was John F. Kennedy's vice president?,vicePresident,influenced,successor,associatedBand,associatedMusicalArtist,influencedBy,president,spouse,predecessor,child,primeMinister
+Who was the doctoral supervisor of Albert Einstein?,doctoralAdvisor,region,almaMater,deathPlace,country,birthPlace,doctoralAdvisor,militaryBranch,doctoralStudent,education,occupation
+Which of Tim Burton's films had the highest budget?,director,director,writer,starring,producer,cinematography,musicComposer,narrator,editing,author,spouse
+Which airports does Yeti Airlines serve?,targetAirport,party,successor,president,birthPlace,associatedBand,associatedMusicalArtist,partner,state,deathPlace,influencedBy
+Give me all members of Prodigy.,bandMember,country,party,associatedMusicalArtist,associatedBand,formerTeam,deathPlace,team,debutTeam,militaryBranch,occupation
+Give me the grandchildren of Elvis Presley.,child,child,spouse,parent,successor,relation,associatedMusicalArtist,associatedBand,relative,predecessor,influenced
+What did Bruce Carver die from?,deathCause,team,type,associatedBand,associatedMusicalArtist,spouse,influencedBy,successor,president,birthPlace,deathPlace
+Which books by Kerouac were published by Viking Press?,publisher/author,publisher,based,developer,nationality,owner,author,illustrator,distributor,influencedBy,computingPlatform
+Did Arnold Schwarzenegger attend a university?,university/almaMater,university,almaMater,team,education,country,college,occupation,birthPlace,nationality,knownFor
+Was Natalie Portman born in the United States?,birthPlace/country,country,birthPlace,nationality,deathPlace,militaryBranch,region,residence,,,
+Which country does the creator of Miffy come from?,creator/nationality,creator,knownFor,associatedBand,associatedMusicalArtist,party,occupation,religion,influencedBy,nationality,deathPlace
+In which U.S. state is Fort Knox located?,country/location,state,team,location,successor,influencedBy,spouse,country,birthPlace,team,
+Which subsidiary of TUI Travel serves both Glasgow and Dublin?,subsidiary/targetAirport,subsidiary,parentCompany,owner,owningCompany,type,associatedBand,occupation,associatedMusicalArtist,knownFor,party
+Give me all actors starring in movies directed by William Shatner.,director/starring,starring,director,author,writer,producer,editing,cinematography,musicComposer,narrator,type
+Who is the daughter of Robert Kennedy married to?,child/spouse,parent,child,spouse,successor,associatedBand,associatedMusicalArtist,relation,relative,influenced,predecessor
+Who is the youngest player in the Premier League?,team/league,team,formerTeam,league,draftTeam,managerClub,debutTeam,college,birthPlace,country,associatedBand
+In which UK city are the headquarters of the MI6?,headquarter/country,headquarter,city,location,country,foundationPlace,locationCity,militaryBranch,district,isPartOf,birthPlace
+Which professional surfers were born in Australia?,occupation/birthPlace,parent,birthPlace,known,associatedBand,associatedMusicalArtist,deathPlace,successor,spouse,team,predecessor
+Which subsidiary of Lufthansa serves both Dortmund and Berlin Tegel?,subsidiary/targetAirport,subsidiary,parentCompany,owner,owningCompany,type,associatedBand,occupation,associatedMusicalArtist,knownFor,party
+Which professional surfers were born on the Philippines?,occupation/birthPlace,known,birthPlace,deathPlace,country,team,hometown,residence,formerTeam,nationality,occupation
+Give me all Swedish oceanographers.,field/birthPlace,partner,influencedBy,doctoralAdvisor,associatedBand,spouse,associatedMusicalArtist,president,occupation,influenced,knownFor
+Which country was Bill Gates born in?,birthPlace/country,country,birthPlace,known,deathPlace,spouse,predecessor,successor,relation,parent,associatedMusicalArtist
+For which label did Elvis record his first album?,artist/recordLabel,associatedBand,associatedMusicalArtist,president,successor,influencedBy,team,formerTeam,birthPlace,almaMater,spouse
+In what city is the Heineken brewery?,manufacturer/locationCity,city,country,associatedMusicalArtist,associatedBand,successor,influencedBy,spouse,birthPlace,location,team
+Which electronics companies were founded in Beijing?,industry/foundationPlace,country,deathPlace,birthPlace,location,hometown,headquarter,state,city,locationCity,foundationPlace
+Who are the parents of the wife of Juan Carlos I?,spouse/parent,child,parent,spouse,successor,associatedMusicalArtist,associatedBand,relation,relative,predecessor,influenced
+Which movies starring Mickey Rourke were directed by Guy Ritchie?,starring/director,director,writer,producer,starring,musicComposer,editing,cinematography,narrator,author,spouse
+In which city are the headquarters of the United Nations?,headquarter/location,headquarter,country,location,militaryBranch,foundationPlace,locationCity,birthPlace,deathPlace,isPartOf,residence
+Who is the coach of Ankara's ice hockey team?,city/league/coach,coach,team,managerClub,formerTeam,college,debutTeam,league,draftTeam,country,occupation
+Who is starring in Spanish movies produced by Benicio del Toro?,country/producer/starring,starring,producer,writer,director,musicComposer,cinematography,narrator,editing,author,company
+Give me all professional skateboarders from Sweden.,occupation/birthPlace/country,formerTeam,team,country,birthPlace,associatedBand,associatedMusicalArtist,nationality,deathPlace,influencedBy,recordLabel
+Who designed the Brooklyn Bridge?,architect/city/landMark,designer,instrument,associatedBand,successor,relation,parent,associatedMusicalArtist,,,
+Give me all Canadian Grunge record labels.,genre/country/recorded,recordLabel,producer,artist,associatedMusicalArtist,associatedBand,previousWork,,,,
+Which computer scientist won an oscar?,field/award/scientist,occupation,team,formerTeam,award,draftTeam,notableWork,battle,president,birthPlace,almaMater
