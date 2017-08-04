@@ -10,6 +10,7 @@ Semantic Lab project
 * textrazor
 * cPickle
 * distance
+* nltk
 
 ### Required data files
 * glove precomputed data files
