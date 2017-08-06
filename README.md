@@ -36,5 +36,5 @@ PS. File names are self explanatory
 
 
 ## Any other issues while running the code:
-Please email to Yasher (yaser.jaradeh@uni-bonn.de) or Kuldeep (kskuldeepvit@gmail.com) if you face any problem.
+Please email to Yaser (yaser.jaradeh@uni-bonn.de) or Kuldeep (kskuldeepvit@gmail.com) if you face any problem.
 
