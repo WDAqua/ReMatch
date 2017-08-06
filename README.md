@@ -1,7 +1,9 @@
 # ReMatch
-Semantic Lab project
+K-Cap 2017 Project 
+## Capturing Knowledge in Semantically-typed Relational Patterns to Enhance Relation Linking
 
-## Installation and Running
+
+## For Installation and Running
 ### Required packages
 * numpy
 * glove_python
@@ -29,11 +31,10 @@ PS. File names are self explanatory
 1. Backend: the complete process of reading PATTY data and create embeddings, with the cosine similarity code
 1. Frontend: the complete process of reading a question and processing it
 1. Textrazor_Api: the API wrapper for the textrazor service
-1. JsonQueryParser: the QALD dataset reader (edited)
 1. main: where the magic happens
 1. api: for the web UI interface
 
 
-## Any other issues:
-Please try solving it before telling me :)
+## Any other issues while running the code:
+Please email to Yasher (yaser.jaradeh@uni-bonn.de) or Kuldeep (kskuldeepvit@gmail.com) if you face any problem.
 
