@@ -1,7 +1,7 @@
 # ReMatch
 K-Cap 2017 Project 
 ## Capturing Knowledge in Semantically-typed Relational Patterns to Enhance Relation Linking
-
+Note: The evaluation results for K-Cap 2017 paper is in "Evaluation results" Folder.
 
 ## For Installation and Running
 ### Required packages
