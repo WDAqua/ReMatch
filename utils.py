@@ -2,9 +2,26 @@
 
 # ===== imports =====
 from nltk.corpus import wordnet as wn
+from nltk.corpus.reader.wordnet import WordNetError
 import re
 
 # ===== definitions =====
+
+def dist_all_synsets(first,second) : 
+    f_syns = wn.synsets(first)
+    
+    s_syns = wn.synsets(second)
+    
+    #Path SImilarity
+    #A 0-1 similarity score based on the shortest path that connects the senses in the is-a (hypernym/hypnoym) taxonomy.
+    #A score of 1 represents identity i.e. comparing a sense with itself will return 1.
+    least_sim = 0.0
+    for f in f_syns :
+        for s in s_syns :
+            path_sim = wn.path_similarity(f,s)
+            if path_sim > least_sim :
+                least_sim = path_sim;
+    return 1.-least_sim
 
 def splitCamelCase(string):
     if type(string) is list:

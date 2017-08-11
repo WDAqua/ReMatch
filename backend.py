@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from scipy import spatial
 
 # ===== definitions =====
-def processPattyData(pattyPath='dbpedia-relation-paraphrases_json.txt',glovePath='../glove.6B.50d.txt'):
+def processPattyData(pattyPath='dbpedia-relation-paraphrases_json.txt',glovePath='glove.6B.50d.txt'):
     patty = PattyReader(path=pattyPath)
     glove = Embedder(path =glovePath)
     patty.processData()
