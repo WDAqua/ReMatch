@@ -161,10 +161,10 @@ def processQuestion(glove, maxLength, patty, mat,question, benchmarking=False):
 
 # ===== main testing =====          
 if __name__ == "__main__":
-    #mat, maxLength, glove, patty = processPatty()
-    mat=np.load('mat.dat')
-    maxLength=np.load('maxLength.dat')
-    glove = load_data('glove.dat')
-    patty = load_data('patty.dat')
-    patty.processData()
-    vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, readQuestion())
+    mat, maxLength, glove, patty = processPatty()
+    #mat=np.load('mat.dat')
+    #maxLength=np.load('maxLength.dat')
+    #glove = load_data('glove.dat')
+    #patty = load_data('patty.dat')
+    #patty.processData()
+    #vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, readQuestion())
