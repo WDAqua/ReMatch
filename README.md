@@ -16,6 +16,7 @@ Note: The evaluation results for K-Cap 2017 paper is in "Evaluation results" Fol
 
 ### Required data files
 * glove precomputed data files
+  - download from (http://nlp.stanford.edu/data/glove.6B.zip) the default file used by the code is (glove.6B.50d.txt)
 * patty data files (included <not big>)
 
 ### Required Data
@@ -33,6 +34,7 @@ PS. File names are self explanatory
 1. Textrazor_Api: the API wrapper for the textrazor service
 1. main: where the magic happens
 1. api: for the web UI interface
+1. webService: for calling the system as a web service locally
 
 
 ## Any other issues while running the code:
