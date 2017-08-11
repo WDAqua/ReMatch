@@ -4,6 +4,10 @@ K-Cap 2017 Project
 Note: The evaluation results for K-Cap 2017 paper is in "Evaluation results" Folder.
 
 ## For Installation and Running
+
+### Python Version
+Python 2.7
+
 ### Required packages
 * numpy
 * glove_python
@@ -13,6 +17,7 @@ Note: The evaluation results for K-Cap 2017 paper is in "Evaluation results" Fol
 * cPickle
 * distance
 * nltk
+* SocketServer
 
 ### Required data files
 * glove precomputed data files
@@ -35,6 +40,32 @@ PS. File names are self explanatory
 1. main: where the magic happens
 1. api: for the web UI interface
 1. webService: for calling the system as a web service locally
+
+## Running local web service
+Running the service via **./webService.py [port]**
+
+
+and calling it is simple i.e. (http://localhost/question_url_encoded)
+  - Response will look like this:
+  ```
+  {
+   "result":[
+      "result 1",
+      "result 2", ...
+   ],
+   "parts":[
+      "part 1",
+      "part 2", ...
+   ],
+   "pos":[
+      [
+         "word",
+         "pos tag"
+      ], ...
+   ],
+   "gen_question":"generalized question here"
+}
+  ```
 
 
 ## Any other issues while running the code:
