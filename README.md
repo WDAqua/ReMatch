@@ -67,6 +67,8 @@ and calling it is simple i.e. (http://localhost/question_url_encoded)
 }
   ```
 
+## Fast run
+please run the code once using the main file to create the *.dat files that will be just loaded other times which will reduce processing time because not extra processing is done.
 
 ## Any other issues while running the code:
 Please email to Yaser (yaser.jaradeh@uni-bonn.de) or Kuldeep (kskuldeepvit@gmail.com) if you face any problem.
