@@ -4,9 +4,10 @@ K-Cap 2017 Project
 Note: The evaluation results for K-Cap 2017 paper is in "Evaluation results" Folder.
 
 ## For Installation and Running
+> Please read the entire README file before doing anything
 
 ### Python Version
-Python 2.7
+Python 2.7 :thumbsup:
 
 ### Required packages
 * numpy
@@ -73,5 +74,5 @@ please run the code once using the main file to create the *.dat files that will
 running main file is straightforward **./main.py** 
 
 ## Any other issues while running the code:
-Please email to Yaser (yaser.jaradeh@uni-bonn.de) or Kuldeep (kskuldeepvit@gmail.com) if you face any problem.
+Please email :email: to Yaser (yaser.jaradeh@gmail.com) or Kuldeep (kskuldeepvit@gmail.com) if you face any problem.
 
