@@ -19,6 +19,9 @@ Python 2.7 :thumbsup:
 * distance
 * nltk
 * SocketServer
+* urllib
+* json
+* re
 
 ### Required data files
 * glove precomputed data files
@@ -50,7 +53,7 @@ and calling it is simple i.e. (http://localhost/question_url_encoded)
   - Response will look like this:
   ```
   {
-   "result":[
+   "results":[
       "result 1",
       "result 2", ...
    ],
@@ -64,7 +67,12 @@ and calling it is simple i.e. (http://localhost/question_url_encoded)
          "pos tag"
       ], ...
    ],
-   "gen_question":"generalized question here"
+   "relation 1": "dbpedia relation lable",
+   "relation 2": "dbpedia relation lable",
+   ...
+   "relation N": "dbpedia relation lable",
+   "gen_question":"generalized question here",
+   "question":"the input question"
 }
   ```
 
