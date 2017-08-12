@@ -50,7 +50,7 @@ class S(BaseHTTPRequestHandler):
             o["parts"]=parts
             o["pos"]=pos
             o["gen_question"]=gen_question
-            o["result"]=[res[0] for res in result[:10]]
+            o["result"]=[res[0] for res in result[:5]]
             self.wfile.write(json.dumps(o))
 
     def do_HEAD(self):
