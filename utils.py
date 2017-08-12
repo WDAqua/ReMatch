@@ -62,4 +62,5 @@ def stripDownExtraWords(orginalString):
 if __name__ == "__main__":
     #print(stripDownExtraWords(splitCamelCase(['thisIsNotANiceString','GoodFeeling','Holy moly'])))
     #print(getSynonyms('flows'))
-    print(makeRelation('yaser is great'))
+    #print(makeRelation('yaser is great'))
+    print(splitCamelCase('yaser'))

@@ -50,7 +50,7 @@ def readQuestion():
     #return 'where in France is sparkling Wine produced'
     #return 'who was named as president of the USA'
     #return 'In which city are the headquarters of the United Nations?'
-    return 'when was albert einstein born'
+    return 'where was Albert Einstein born'
     #return raw_input("Please enter a question: ")
     
 def load_data(filePath):
@@ -70,7 +70,11 @@ def calcDistance(label,relations):
     minString = None
     for relation in relations:
         #distance = dist(label,relation)
-        distance = utils.dist_all_synsets(label,relation)
+        distance = 10
+        for part in utils.splitCamelCase(relation).split():
+            newDist = utils.dist_all_synsets(label,part)
+            if newDist < distance:
+                distance = newDist
         if distance < minValue:
             minValue = distance
             minString = relation
@@ -85,7 +89,7 @@ def processPatty():
     save_data(patty,'patty.dat')
     return mat, maxLength, glove, patty
 
-def processQuestion(glove, maxLength, patty, mat,question, benchmarking=False):
+def processQuestion(glove, maxLength, patty, mat,question):
     vectors, parts, pos, gen_question, labels, apiResults = frontend.processQuestion(glove,question,minLen=MIN_LENGTH_COMP,maxLen=MAX_LENGTH_COMP,useAPI=USE_TEXT_RAZOR,useSynonyms=False)
     #vectors, _ = backend.padVectors(vectors,maxLength)
     similarities = backend.calculateSimilarity(np.array(vectors),np.array(mat)[:,:-1])
@@ -126,9 +130,6 @@ def processQuestion(glove, maxLength, patty, mat,question, benchmarking=False):
             #print('part:', part)
             winner,d = calcDistance(part, newRelations)
             #print('winner: ', winner)
-            if not benchmarking:
-                if d > 4L:
-                    continue
             if finalCountUnweighted.has_key(winner):
                 finalCountUnweighted[winner]+=40
             else:
@@ -161,10 +162,10 @@ def processQuestion(glove, maxLength, patty, mat,question, benchmarking=False):
 
 # ===== main testing =====          
 if __name__ == "__main__":
-    mat, maxLength, glove, patty = processPatty()
-    #mat=np.load('mat.dat')
-    #maxLength=np.load('maxLength.dat')
-    #glove = load_data('glove.dat')
-    #patty = load_data('patty.dat')
-    #patty.processData()
-    #vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = processQuestion(glove,maxLength, patty, mat, readQuestion())
+    #mat, maxLength, glove, patty = processPatty()
+    mat=np.load('mat.dat')
+    maxLength=np.load('maxLength.dat')
+    glove = load_data('glove.dat')
+    patty = load_data('patty.dat')
+    patty.processData()
+    vectors, parts, pos, gen_question, similarities, unweighted, weighted, result, _ = processQuestion(glove,maxLength, patty, mat, readQuestion())

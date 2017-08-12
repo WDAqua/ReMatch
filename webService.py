@@ -49,6 +49,7 @@ class S(BaseHTTPRequestHandler):
             #	o["vectors"].append(vec.tolist())
             o["parts"]=parts
             o["pos"]=pos
+            o["question"]=question
             o["gen_question"]=gen_question
             results = [res[0] for res in result[:5]]
             if apiResults:
