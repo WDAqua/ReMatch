@@ -42,7 +42,7 @@ class S(BaseHTTPRequestHandler):
             self._set_headers()
             question = urllib.unquote(self.path[1:])
             #self.wfile.write("<html><body><h1>"+question+"</h1></body></html>")
-            vectors, parts, pos, gen_question, similarities, unweighted, weighted, result = base.processQuestion(self.glove,self.maxLength, self.patty, self.mat, question)
+            vectors, parts, pos, gen_question, similarities, unweighted, weighted, result, apiResults = base.processQuestion(self.glove,self.maxLength, self.patty, self.mat, question)
             o={}
             #o["vectors"]=[]
             #for vec in vectors:
@@ -50,8 +50,15 @@ class S(BaseHTTPRequestHandler):
             o["parts"]=parts
             o["pos"]=pos
             o["gen_question"]=gen_question
-            o["result"]=[res[0] for res in result[:5]]
-            self.wfile.write(json.dumps(o))
+            results = [res[0] for res in result[:5]]
+            if apiResults:
+                i = 0
+                for part in parts:
+                    key = 'relation %d' % (i+1)
+                    o[key] = results[i]
+                    i += 1
+            o["results"]=results
+            self.wfile.write(json.dumps(o, indent=4, sort_keys=True))
 
     def do_HEAD(self):
         self._set_headers()

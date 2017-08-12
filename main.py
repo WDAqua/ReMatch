@@ -86,7 +86,7 @@ def processPatty():
     return mat, maxLength, glove, patty
 
 def processQuestion(glove, maxLength, patty, mat,question, benchmarking=False):
-    vectors, parts, pos, gen_question, labels = frontend.processQuestion(glove,question,minLen=MIN_LENGTH_COMP,maxLen=MAX_LENGTH_COMP,useAPI=USE_TEXT_RAZOR,useSynonyms=False)
+    vectors, parts, pos, gen_question, labels, apiResults = frontend.processQuestion(glove,question,minLen=MIN_LENGTH_COMP,maxLen=MAX_LENGTH_COMP,useAPI=USE_TEXT_RAZOR,useSynonyms=False)
     #vectors, _ = backend.padVectors(vectors,maxLength)
     similarities = backend.calculateSimilarity(np.array(vectors),np.array(mat)[:,:-1])
     winnersNum = NUM_WINNERS
@@ -156,7 +156,7 @@ def processQuestion(glove, maxLength, patty, mat,question, benchmarking=False):
             finalCountWeighted[relation] *= patty.weights[relation]
     finalCountWeightedSorted = sorted(finalCountWeighted.items(), key=lambda x:x[1], reverse=True)
     ''' end of second iteration '''
-    return vectors, parts, pos, gen_question, similarities, finalCountUnweighted, finalCountWeighted, finalCountWeightedSorted
+    return vectors, parts, pos, gen_question, similarities, finalCountUnweighted, finalCountWeighted, finalCountWeightedSorted, apiResults
 
 
 # ===== main testing =====          

@@ -17,9 +17,11 @@ def processQuestion(gloveModel, question, minLen=1,maxLen=3, useAPI=False, useSy
         question=question[:-1]
     gen_question = splitter.generalize(question, pos)
     labels = []
+    resultsExists = False
     if not useAPI:
         parts = list(splitter.split(gen_question,min=minLen,max=maxLen))
     else:
+        resultsExists = True
         apiResult, _ = api.getBinaryRelations(question)
         parts = [rel.predicate for rel in apiResult if len(rel.predicate_positions_) > 1]
         for part in parts:
@@ -34,12 +36,13 @@ def processQuestion(gloveModel, question, minLen=1,maxLen=3, useAPI=False, useSy
                             for syn in gloveModel.gloveModel.most_similar(predicate.lower()):
                                 parts.append(part.replace(predicate,syn[0]))
         if len(parts) == 0:
+            resultsExists = False
             parts = list(splitter.split(gen_question,min=minLen,max=maxLen))
     # create embedder part
     vectors = []
     for part in parts:
         vectors.append(gloveModel.getVector(part))
-    return vectors, parts, pos, gen_question, labels
+    return vectors, parts, pos, gen_question, labels, resultsExists
 
 # ===== main testing =====          
 if __name__ == "__main__":
